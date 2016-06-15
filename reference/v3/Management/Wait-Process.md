@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135277
 schema: 2.0.0
 ---
 
@@ -28,7 +27,7 @@ Wait-Process [[-Timeout] <Int32>] -InputObject <Process[]>
 ## DESCRIPTION
 The Wait-Process cmdlet waits for one or more running processes to be stopped before accepting input. 
 In the Windows PowerShell console, this cmdlet suppresses the command prompt until the processes are stopped.
-You can specify a process by process name or process ID (PID), or pipe a process object to Wait-Process.
+You can specify a process by process name or process ID \(PID\), or pipe a process object to Wait-Process.
 
 Wait-Process works only on processes running on the local computer.
 
@@ -80,7 +79,7 @@ If both processes are not stopped, the cmdlet displays a non-terminating error a
 Specifies the process IDs of the processes.
 To specify multiple IDs, use commas to separate the IDs.
 To find the PID of a process, type "get-process".
-The parameter name ("Id") is optional.
+The parameter name \("Id"\) is optional.
 
 ```yaml
 Type: Int32[]
@@ -90,7 +89,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -106,7 +105,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -123,7 +122,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -140,7 +139,7 @@ Aliases:
 Required: False
 Position: 2
 Default value: No timeout
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -160,6 +159,8 @@ For more information about this method, see the Microsoft .NET Framework SDK.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135277)
+
 [Debug-Process](ba768230-a5ed-4b80-8e1f-3cba8413aa78)
 
 [Get-Process](b30db241-c0f6-40d3-ab3b-ab86342b36c1)
@@ -169,4 +170,5 @@ For more information about this method, see the Microsoft .NET Framework SDK.
 [Stop-Process](3864dc3d-34ec-4ebd-8132-776346c00871)
 
 [Wait-Process](861eb7b3-a18e-4445-9a69-2c65c420866f)
+
 

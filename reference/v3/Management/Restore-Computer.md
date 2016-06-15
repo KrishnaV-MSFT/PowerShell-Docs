@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135254
 schema: 2.0.0
 ---
 
@@ -77,7 +76,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -91,8 +90,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -108,8 +107,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -126,9 +125,11 @@ This cmdlet does not generate any output.
 ## NOTES
 To run a Restore-Computer command on Windows Vista and later versions of Windows, open Windows PowerShell with the "Run as administrator" option.
 
-This cmdlet uses the Windows Management Instrumentation (WMI) SystemRestore class.
+This cmdlet uses the Windows Management Instrumentation \(WMI\) SystemRestore class.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135254)
 
 [Checkpoint-Computer](9ef7dd97-dbd9-43de-8988-9ab85e7827ad)
 
@@ -139,4 +140,5 @@ This cmdlet uses the Windows Management Instrumentation (WMI) SystemRestore clas
 [Get-ComputerRestorePoint](3afe67e8-56bd-4505-b7f6-b822143a28d5)
 
 [Restart-Computer](ba50f64c-866e-4315-91c7-0ce16b44c47e)
+
 

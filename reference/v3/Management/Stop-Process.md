@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113412
 schema: 2.0.0
 ---
 
@@ -27,7 +26,7 @@ Stop-Process [-Force] [-PassThru] -Name <String[]> [-Confirm] [-WhatIf]
 
 ## DESCRIPTION
 The Stop-Process cmdlet stops one or more running processes.
-You can specify a process by process name or process ID (PID), or pass a process object to Stop-Process. 
+You can specify a process by process name or process ID \(PID\), or pass a process object to Stop-Process. 
 Stop-Process works only on processes running on the local computer.
 
 On Windows Vista and later versions of Windows, to stop a process that is not owned by the current user, you must start Windows PowerShell with the "Run as administrator" option. 
@@ -41,7 +40,7 @@ PS C:\>stop-process -name notepad
 ```
 
 This command stops all instances of the Notepad process on the computer.
-(Each instance of Notepad runs in its own process.) It uses the Name parameter to specify the processes, all of which have the same name.
+\(Each instance of Notepad runs in its own process.\) It uses the Name parameter to specify the processes, all of which have the same name.
 If you were to use the ID parameter to stop the same processes, you would have to list the process IDs of each instance of Notepad.
 
 ### -------------------------- EXAMPLE 2 --------------------------
@@ -74,14 +73,14 @@ PS C:\>get-process | where-object {$_.HasExited}
 
 This series of commands starts and stops the Calc process and then detects processes that have stopped.
 
-The first command ("calc") starts an instance of the calculator.
-The second command ("$p = get-process calc"), uses the Get-Process cmdlet to get an object representing the Calc process and store it in the $p variable.
-The third command ("stop-process -inputobject $p") uses the Stop-Process cmdlet to stop the Calc process.
+The first command \("calc"\) starts an instance of the calculator.
+The second command \("$p = get-process calc"\), uses the Get-Process cmdlet to get an object representing the Calc process and store it in the $p variable.
+The third command \("stop-process -inputobject $p"\) uses the Stop-Process cmdlet to stop the Calc process.
 It uses the InputObject parameter to pass the object to Stop-Process.
 
 The last command gets all of the processes on the computer that were running but that are now stopped.
 It uses the Get-Process cmdlet to get all of the processes on the computer.
-The pipeline operator (|) passes the results to the Where-Object cmdlet, which selects the ones where the value of the HasExited property is TRUE.
+The pipeline operator \(|\) passes the results to the Where-Object cmdlet, which selects the ones where the value of the HasExited property is TRUE.
 HasExited is just one property of process objects.
 To find all the properties, type "get-process | get-member".
 
@@ -130,7 +129,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -138,7 +137,7 @@ Accept wildcard characters: False
 Specifies the process IDs of the processes to be stopped.
 To specify multiple IDs, use commas to separate the IDs.
 To find the PID of a process, type "get-process".
-The parameter name ("Id") is optional.
+The parameter name \("Id"\) is optional.
 
 ```yaml
 Type: Int32[]
@@ -148,7 +147,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -164,13 +163,13 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
 ### -Name
 Specifies the process names of the processes to be stopped.
-You can type multiple process names (separated by commas) or use wildcard characters.
+You can type multiple process names \(separated by commas\) or use wildcard characters.
 
 ```yaml
 Type: String[]
@@ -180,7 +179,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: True
 ```
 
@@ -196,7 +195,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -210,8 +209,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -227,8 +226,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -247,13 +246,15 @@ Otherwise, this cmdlet does not generate any output.
 You can also refer to Stop-Process by its built-in aliases, "kill" and "spps".
 For more information, see about_Aliases.
 
-You can also use the properties and methods of the Windows Management Instrumentation (WMI) Win32_Process object in Windows PowerShell.
+You can also use the properties and methods of the Windows Management Instrumentation \(WMI\) Win32_Process object in Windows PowerShell.
 For more information, see Get-WmiObject and the WMI SDK.
 
 When stopping processes, be aware that stopping a process can stop process and services that depend on the process.
 In an extreme case, stopping a process can stop Windows.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113412)
 
 [Debug-Process](ba768230-a5ed-4b80-8e1f-3cba8413aa78)
 
@@ -264,4 +265,5 @@ In an extreme case, stopping a process can stop Windows.
 [Stop-Process](3864dc3d-34ec-4ebd-8132-776346c00871)
 
 [Wait-Process](861eb7b3-a18e-4445-9a69-2c65c420866f)
+
 

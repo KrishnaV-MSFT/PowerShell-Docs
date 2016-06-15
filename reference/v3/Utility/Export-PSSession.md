@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135213
 schema: 2.0.0
 ---
 
@@ -146,14 +145,14 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -ArgumentList
-Exports the variant of the command that results from using the specified arguments (parameter values).
+Exports the variant of the command that results from using the specified arguments \(parameter values\).
 
-For example, to export the variant of the Get-Item command in the certificate (Cert:) drive in the PSSession in $s, type "export-pssession -session $s -command get-item -argumentlist cert:".
+For example, to export the variant of the Get-Item command in the certificate \(Cert:\) drive in the PSSession in $s, type "export-pssession -session $s -command get-item -argumentlist cert:".
 
 ```yaml
 Type: Object[]
@@ -163,7 +162,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -187,7 +186,7 @@ Aliases:
 Required: False
 Position: 3
 Default value: All commands in the session.
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -199,9 +198,9 @@ Valid values are:
 
 -- Alias: All Windows PowerShell aliases in the current session.
 -- All: All command types. It is the equivalent of "get-command *".
--- Application: All files other than Windows PowerShell files in paths listed in the Path environment variable ($env:path), including .txt, .exe, and .dll files.
+-- Application: All files other than Windows PowerShell files in paths listed in the Path environment variable \($env:path\), including .txt, .exe, and .dll files.
 -- Cmdlet: The cmdlets in the current session. "Cmdlet" is the default.
--- ExternalScript: All .ps1 files in the paths listed in the Path environment variable ($env:path).
+-- ExternalScript: All .ps1 files in the paths listed in the Path environment variable \($env:path\).
 -- Filter and Function: All Windows PowerShell functions.
 -- Script: Script blocks in the current session.
 
@@ -213,7 +212,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: All commands in the session.
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -230,7 +229,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: UTF-8
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -245,7 +244,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -269,7 +268,7 @@ Aliases:
 Required: False
 Position: 4
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -288,12 +287,12 @@ Aliases:
 Required: False
 Position: Named
 Default value: All commands in the session.
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -OutputModule
-Specifies a path (optional) and name for the module that Export-PSSession creates.
+Specifies a path \(optional\) and name for the module that Export-PSSession creates.
 The default path is $home\Documents\WindowsPowerShell\Modules.
 This parameter is required.
 
@@ -308,7 +307,7 @@ Aliases:
 Required: True
 Position: 2
 Default value: $home\Documents\WindowsPowerShell\Modules
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -325,15 +324,15 @@ Aliases:
 Required: True
 Position: 1
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Certificate
-Specifies the client certificate that is used to sign the format files (*.Format.ps1xml) or script module files (.psm1) in the module that Export-PSSession creates.
+Specifies the client certificate that is used to sign the format files \(*.Format.ps1xml\) or script module files \(.psm1\) in the module that Export-PSSession creates.
 Enter a variable that contains a certificate or a command or expression that gets the certificate.
 
-To find a certificate, use the Get-PfxCertificate cmdlet or use the Get-ChildItem cmdlet in the Certificate (Cert:) drive.
+To find a certificate, use the Get-PfxCertificate cmdlet or use the Get-ChildItem cmdlet in the Certificate \(Cert:\) drive.
 If the certificate is not valid or does not have sufficient authority, the command fails.
 
 ```yaml
@@ -344,7 +343,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -395,6 +394,8 @@ If the command does not import formatting data, any formatting files that are cr
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135213)
+
 [Import-Module](00000000-0000-0000-0000-000000000000)
 
 [Import-PSSession](fd5e8e29-a49a-4bc5-98ae-291b31c7755b)
@@ -406,4 +407,5 @@ If the command does not import formatting data, any formatting files that are cr
 [about_Command_Precedence](23d974c6-45fa-42c9-a478-123363d7aeac)
 
 [about_PSSessions](7a9b4e0e-fa1b-47b0-92f6-6e2995d70acb)
+
 

@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113294
 schema: 2.0.0
 ---
 
@@ -46,7 +45,7 @@ The first command uses the Set-PSBreakpoint cmdlet to create a breakpoint on the
 Then, it saves the breakpoint object in the $b variable.
 
 The second command uses the Disable-PSBreakpoint cmdlet to disable the new breakpoint.
-It uses a pipeline operator (|) to send the breakpoint object in $b to the Disable-PSBreakpoint cmdlet.
+It uses a pipeline operator \(|\) to send the breakpoint object in $b to the Disable-PSBreakpoint cmdlet.
 
 As a result of this command, the value of the Enabled property of the breakpoint object in $b is False.
 
@@ -96,7 +95,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -113,7 +112,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -129,7 +128,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -143,8 +142,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -160,8 +159,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -180,6 +179,8 @@ Otherwise, this cmdlet does not generate any output.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113294)
+
 [Enable-PSBreakpoint](739e1091-3b3f-405f-a428-bec7543e5df0)
 
 [Get-PSBreakpoint](0bf48936-00ab-411c-b5e0-9b10a812a3c6)
@@ -191,4 +192,5 @@ Otherwise, this cmdlet does not generate any output.
 [Set-PSBreakpoint](6afd5d2c-a285-4796-8607-3cbf49471420)
 
 [about_Debuggers]()
+
 

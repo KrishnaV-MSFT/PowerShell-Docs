@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113414
 schema: 2.0.0
 ---
 
@@ -39,7 +38,7 @@ You can specify the services by their service names or display names, or you can
 PS C:\>stop-service sysmonlog
 ```
 
-This command stops the Performance Logs and Alerts (SysmonLog) service on the local computer.
+This command stops the Performance Logs and Alerts \(SysmonLog\) service on the local computer.
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```
@@ -48,7 +47,7 @@ PS C:\>get-service -displayname telnet | stop-service
 
 This command stops the Telnet service on the local computer.
 The command uses the Get-Service cmdlet to get an object representing the Telnet service.
-The pipeline operator (|) pipes the object to the Stop-Service cmdlet, which stops the service.
+The pipeline operator \(|\) pipes the object to the Stop-Service cmdlet, which stops the service.
 
 ### -------------------------- EXAMPLE 3 --------------------------
 ```
@@ -61,7 +60,7 @@ Because stopping this service also stops the services that depend on the IISAdmi
 
 The first command lists the services that depend on IISAdmin.
 It uses the Get-Service cmdlet to get an object representing the IISAdmin service.
-The pipeline operator (|) passes the result to the Format-List cmdlet.
+The pipeline operator \(|\) passes the result to the Format-List cmdlet.
 The command uses the Property parameter of Format-List to list only the Name and DependentServices properties of the service.
 
 The second command stops the IISAdmin service.
@@ -82,7 +81,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -100,7 +99,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -115,7 +114,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -133,7 +132,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -149,7 +148,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -168,7 +167,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: true (ByPropertyName, ByValue)
 Accept wildcard characters: True
 ```
 
@@ -184,7 +183,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -198,8 +197,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -215,8 +214,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -243,6 +242,8 @@ The service names appear in the Name column and the display names appear in the 
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113414)
+
 [Get-Service](77f3c94b-6ffd-4906-8216-3debbf5ffe79)
 
 [New-Service](ad24021a-4603-4c9c-bd20-8f9bdde123fa)
@@ -256,4 +257,5 @@ The service names appear in the Name column and the display names appear in the 
 [Start-Service](a3abab52-805c-4054-a41a-82cd81dc7fd3)
 
 [Suspend-Service](5b8bd69a-0a18-4478-b257-d442ddef417c)
+
 

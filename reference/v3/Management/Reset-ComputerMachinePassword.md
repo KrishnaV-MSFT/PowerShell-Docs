@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135252
 schema: 2.0.0
 ---
 
@@ -64,7 +63,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Current user
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -82,7 +81,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -96,8 +95,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -113,8 +112,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -131,4 +130,7 @@ This cmdlet does not generate any output.
 ## NOTES
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135252)
+
 

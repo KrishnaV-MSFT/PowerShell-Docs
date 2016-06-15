@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113292
 schema: 2.0.0
 ---
 
@@ -85,7 +84,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -106,7 +105,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Current user
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -122,7 +121,7 @@ Aliases:
 Required: False
 Position: 2
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -138,7 +137,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -156,7 +155,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -171,7 +170,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Force
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -186,7 +185,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -205,7 +204,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: true (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -221,7 +220,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -236,7 +235,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: true (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -251,7 +250,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -265,8 +264,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -282,15 +281,15 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -UseTransaction
 Includes the command in the active transaction.
 This parameter is valid only when a transaction is in progress.
-For more information, see Includes the command in the active transaction.
+For more information, see Includes the command in the active transaction.
 This parameter is valid only when a transaction is in progress.
 For more information, see
 
@@ -301,8 +300,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -326,6 +325,8 @@ For more information, see about_Providers.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113292)
+
 [Clear-Item](e78220a3-d720-4347-bdbe-8f15f77f3aa1)
 
 [Get-Item](4ed2b1e1-fde4-4425-90a0-87774477fefa)
@@ -343,4 +344,5 @@ For more information, see about_Providers.
 [Set-Item](704c03fc-6fdd-46d6-9da6-6d3a2196918c)
 
 [about_Providers](55e2974f-3314-48d2-8b1b-abdea6b303cb)
+
 

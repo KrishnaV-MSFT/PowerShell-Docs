@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=219983
 schema: 2.0.0
 ---
 
@@ -40,12 +39,12 @@ Because this cmdlet requires a user interface, it does not work on Server Core i
 
 ### Example 1: Open a Control Panel Item
 ```
-PS C:\>Show-ControlPanelItem -Name AutoPlay
+PS C:\>Show-ControlPanelItem –Name AutoPlay
 ```
 
 ### Example 2: Pipe a control panel item to Show-ControlPanelItem
 ```
-PS C:\>Get-ControlPanelItem -Name "Windows Firewall" | Show-ControlPanelItem
+PS C:\>Get-ControlPanelItem –Name "Windows Firewall" | Show-ControlPanelItem
 ```
 
 This command opens the Windows Firewall control panel item on the local computer.
@@ -78,7 +77,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -94,7 +93,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -111,7 +110,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: true (ByValue, ByPropertyName)
 Accept wildcard characters: True
 ```
 
@@ -129,5 +128,8 @@ This cmdlet does not return any output.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=219983)
+
 [Get-ControlPanelItem](32022669-448f-408a-a0e7-9ecc8ac7bb93)
+
 

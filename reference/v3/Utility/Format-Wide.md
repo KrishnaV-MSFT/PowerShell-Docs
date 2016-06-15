@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113304
 schema: 2.0.0
 ---
 
@@ -28,7 +27,7 @@ PS C:\>get-childitem | format-wide -column 3
 
 This command displays the names of files in the current directory in three columns across the screen.
 The Get-ChildItem cmdlet gets objects representing each file in the directory.
-The pipeline operator (|) passes the file objects through the pipeline to Format-Wide, which formats them for output.
+The pipeline operator \(|\) passes the file objects through the pipeline to Format-Wide, which formats them for output.
 The Column parameter specifies the number of columns.
 
 ### -------------------------- EXAMPLE 2 --------------------------
@@ -39,7 +38,7 @@ PS C:\>get-childitem HKCU:\software\microsoft | format-wide -property pschildnam
 This command displays the names of registry keys in the HKEY_CURRENT_USER\Software\Microsoft key.
 The Get-ChildItem cmdlet gets objects representing the keys.
 The path is specified as "HKCU:", one of the drives exposed by the Windows PowerShell Registry provider, followed by the key path.
-The pipeline operator (|) passes the registry key objects through the pipeline to Format-Wide, which formats them for output.
+The pipeline operator \(|\) passes the registry key objects through the pipeline to Format-Wide, which formats them for output.
 The Property parameter specifies the name of the property, and the AutoSize parameter adjusts the columns for readability.
 
 ## PARAMETERS
@@ -57,7 +56,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -73,7 +72,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -83,7 +82,7 @@ This parameter is rarely used, but can be used as a debugging aid when you are f
 The following shows an example of the results of adding the DisplayError parameter with an expression.
 
 PS \> Get-Date | Format-Wide DayOfWeek,{ $_ / $null } -ShowError
-DayOfWeek  $_ / $null
+DayOfWeek  $_ / $null
 --------- ------------
 Wednesday #ERR
 
@@ -95,13 +94,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Expand
 Formats the collection object, as well as the objects in the collection.
-This parameter is designed to format objects that support the ICollection (System.Collections) interface.
+This parameter is designed to format objects that support the ICollection \(System.Collections\) interface.
 The default value is EnumOnly.
 
 Valid values are:
@@ -118,7 +117,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: EnumOnly
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -134,7 +133,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -146,7 +145,7 @@ The value of the GroupBy parameter can be a new calculated property.
 To create a calculated, property, use a hash table.
 Valid keys are:
 
--- Name (or Label) \<string\>
+-- Name \(or Label\) \<string\>
 -- Expression \<string\> or \<script block\>
 -- FormatString \<string\>
 
@@ -158,7 +157,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -174,7 +173,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -183,7 +182,7 @@ Specifies the object properties that appear in the display and the order in whic
 Wildcards are permitted.
 
 If you omit this parameter, the properties that appear in the display depend on the object being displayed.
-The parameter name ("Property") is optional.
+The parameter name \("Property"\) is optional.
 You cannot use the Property and View parameters in the same command.
 
 The value of the Property parameter can be a new calculated property.
@@ -201,7 +200,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -216,7 +215,7 @@ DayOfWeek  $_ / $null
 Wednesday
 
 Failed to evaluate expression " $_ / $null ".
-    + CategoryInfo          : InvalidArgument: (10/30/2013 2:28:07 PM:PSObject) \[\], RuntimeException
+    + CategoryInfo          : InvalidArgument: \(10/30/2013 2:28:07 PM:PSObject\) \[\], RuntimeException
     + FullyQualifiedErrorId : mshExpressionError
 
 ```yaml
@@ -227,7 +226,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -242,7 +241,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -268,4 +267,7 @@ If the alternate view is a list, use Format-List.
 If the alternate view is neither a list nor a table, use Format-Custom.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113304)
+
 

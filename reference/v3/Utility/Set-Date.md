@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113393
 schema: 2.0.0
 ---
 
@@ -40,7 +39,7 @@ Description
 This command adds three days to the current system date.
 It does not affect the time.
 The command uses the Date parameter to specify the date.
-It uses the Get-Date cmdlet to get the current date and time and applies the AddDays .NET method for DateTime objects with a value of 3 (days).
+It uses the Get-Date cmdlet to get the current date and time and applies the AddDays .NET method for DateTime objects with a value of 3 \(days\).
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```
@@ -52,7 +51,7 @@ Description
 -----------
 
 This command sets the current system time back by 10 minutes.
-It uses the Adjust parameter to specify an interval of change and the time change (minus ten minutes) in standard time format for the locale.
+It uses the Adjust parameter to specify an interval of change and the time change \(minus ten minutes\) in standard time format for the locale.
 The DisplayHint parameter tells Windows PowerShell to display only the time, but it does not affect the DateTime object that Set-Date returns.
 
 ### -------------------------- EXAMPLE 3 --------------------------
@@ -141,7 +140,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -155,8 +154,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -172,8 +171,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -198,7 +197,10 @@ For more information, see "DateTime Methods" and "TimeSpan Methods."
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113393)
+
 [Get-Date](277ba77f-f2be-44d7-8f15-23069faf0a4b)
 
 [New-TimeSpan](d0503c70-1a91-47b6-84e5-473e78fe02df)
+
 

@@ -2,7 +2,7 @@
 Module Name: \ISE
 Module Guid: 00000000-0000-0000-0000-000000000000
 Download Help Link: n/a
-Help Version: 0.0.0.0
+Help Version: 3.0.3.0
 Locale: en-US
 ---
 
@@ -19,4 +19,5 @@ Locale: en-US
 
 ### [New-IseSnippet](New-IseSnippet.md)
 {{Manually Enter New-IseSnippet Description Here}}
+
 

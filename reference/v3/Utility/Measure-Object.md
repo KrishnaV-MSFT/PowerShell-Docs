@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113349
 schema: 2.0.0
 ---
 
@@ -85,8 +84,8 @@ Property : PSIsContainer
 ```
 
 This example demonstrates the Measure-Object can measure Boolean values.
-In this case, it uses the PSIsContainer Boolean property to measure the incidence of folders (vs.
-files) in the current directory.
+In this case, it uses the PSIsContainer Boolean property to measure the incidence of folders \(vs.
+files\) in the current directory.
 
 ## PARAMETERS
 
@@ -101,7 +100,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -116,7 +115,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -132,7 +131,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -140,7 +139,7 @@ Accept wildcard characters: False
 Specifies the objects to be measured.
 Enter a variable that contains the objects, or type a command or expression that gets the objects.
 
-When you use the InputObject parameter with Measure-Object, instead of piping command results to Measure-Object, the InputObject value-even if the value is a collection that is the result of a command, such as -InputObject (Get-Process)-is treated as a single object.
+When you use the InputObject parameter with Measure-Object, instead of piping command results to Measure-Object, the InputObject value—even if the value is a collection that is the result of a command, such as –InputObject \(Get-Process\)—is treated as a single object.
 Because InputObject cannot return individual properties from an array or collection of objects, it is recommended that if you use Measure-Object to measure a collection of objects for those objects that have specific values in defined properties, you use Measure-Object in the pipeline, as shown in the examples in this topic.
 
 ```yaml
@@ -151,7 +150,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -166,7 +165,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -181,7 +180,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -196,13 +195,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Property
 Specifies one or more numeric properties to measure.
-The default is the Count (Length) property of the object.
+The default is the Count \(Length\) property of the object.
 
 ```yaml
 Type: String[]
@@ -212,7 +211,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: Count
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -227,7 +226,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -242,7 +241,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -261,6 +260,8 @@ Otherwise, it returns a GenericMeasureInfo object.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113349)
+
 [Compare-Object](bdc20eac-bff6-44bc-b130-1a986c79fb78)
 
 [ForEach-Object](00000000-0000-0000-0000-000000000000)
@@ -276,4 +277,5 @@ Otherwise, it returns a GenericMeasureInfo object.
 [Tee-Object](ae5c403c-6a21-430e-a94a-74a1edee149a)
 
 [Where-Object](00000000-0000-0000-0000-000000000000)
+
 

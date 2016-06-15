@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_ScheduledJob.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=223920
 schema: 2.0.0
 ---
 
@@ -87,7 +86,7 @@ PS C:\>Get-ScheduledJob | Get-ScheduledJobOptions
 This command gets the job options of all scheduled jobs on the local computer.
 
 It uses the Get-ScheduledJob cmdlet to get the scheduled jobs on the local computer.
-A pipeline operator (|) sends the scheduled jobs to the Get-ScheduledJobOptions cmdlet, which gets the job options of each scheduled job.
+A pipeline operator \(|\) sends the scheduled jobs to the Get-ScheduledJobOptions cmdlet, which gets the job options of each scheduled job.
 
 ### Example 3: Get selected job options
 ```
@@ -136,7 +135,7 @@ This example shows how to find job options object with particular values.
 ```
 PS C:\>$Opts = Get-ScheduledJobOption -Name BackupTestLogs
 
-PS C:\>Register-ScheduledJob -Name Archive-Scripts -FilePath \\Srv01\Scripts\ArchiveScripts.ps1 -ScheduledJobOption $Opts
+PS C:\>Register-ScheduledJob –Name Archive-Scripts -FilePath \\Srv01\Scripts\ArchiveScripts.ps1 -ScheduledJobOption $Opts
 ```
 
 This example shows how to use the job options that Get-ScheduledJobOptions gets in a new scheduled job.
@@ -171,7 +170,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -188,7 +187,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -207,7 +206,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: True
 ```
 
@@ -223,6 +222,8 @@ You can pipe a scheduled job from Get-ScheduledJob to Get-ScheduledJobOption.
 ## NOTES
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=223920)
 
 [about_Scheduled_Jobs](3b546629-703c-4939-b44f-52dd567bce92)
 
@@ -257,4 +258,5 @@ You can pipe a scheduled job from Get-ScheduledJob to Get-ScheduledJobOption.
 [Set-ScheduledJobOption](5fe666db-ceed-4261-89ec-376dd01712f9)
 
 [Unregister-ScheduledJob](a76ff3d0-1496-46a8-885a-b54552eda897)
+
 

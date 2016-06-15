@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135221
 schema: 2.0.0
 ---
 
@@ -17,7 +16,7 @@ Import-PSSession [-Session] <PSSession> [[-CommandName] <String[]>] [[-FormatTyp
 ```
 
 ## DESCRIPTION
-The Import-PSSession cmdlet imports commands (such as cmdlets, functions, and aliases) from a PSSession on a local or remote computer into the current session.
+The Import-PSSession cmdlet imports commands \(such as cmdlets, functions, and aliases\) from a PSSession on a local or remote computer into the current session.
 You can import any command that the Get-Command cmdlet can find in the PSSession.
 
 Use an Import-PSSession command to import commands from a customized shell, such as a Microsoft Exchange Server shell, or from a session that includes Windows PowerShell modules and snap-ins or other elements that are not in the current session.
@@ -30,7 +29,7 @@ To import all the commands, use the AllowClobber parameter.
 You can use imported commands just as you would use any command in the session.
 When you use an imported command, the imported part of the command runs implicitly in the session from which it was imported.
 However, the remote operations are handled entirely by Windows PowerShell.
-You need not even be aware of them, except that you must keep the connection to the other session (PSSession) open.
+You need not even be aware of them, except that you must keep the connection to the other session \(PSSession\) open.
 If you close it, the imported commands are no longer available.
 
 Because imported commands might take longer to run than local commands, Import-PSSession adds an AsJob parameter to every imported command.
@@ -161,7 +160,7 @@ It also shows that all commands are converted into functions before they are imp
 The command uses the Import-PSSession cmdlet to import a Get-Date cmdlet and a SearchHelp function into the current session.
 
 The Import-PSSession cmdlet returns a PSModuleInfo object that represents the temporary module.
-The value of the Path property shows that Import-PSSession created a script module (.psm1) file in a temporary location.
+The value of the Path property shows that Import-PSSession created a script module \(.psm1\) file in a temporary location.
 The ExportedFunctions property shows that the Get-Date cmdlet and the SearchHelp function were both imported as functions.
 
 ### -------------------------- EXAMPLE 7 --------------------------
@@ -261,14 +260,14 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -ArgumentList
-Imports the variant of the command that results from using the specified arguments (parameter values).
+Imports the variant of the command that results from using the specified arguments \(parameter values\).
 
-For example, to import the variant of the Get-Item command in the certificate (Cert:) drive in the PSSession in $s, type "Import-PSSession -Session $s -command get-item -argumentlist cert:".
+For example, to import the variant of the Get-Item command in the certificate \(Cert:\) drive in the PSSession in $s, type "Import-PSSession -Session $s -command get-item -argumentlist cert:".
 
 ```yaml
 Type: Object[]
@@ -278,7 +277,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: All command in the PSSession, except for commands with the same names as commands in the current session.
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -302,7 +301,7 @@ Aliases:
 Required: False
 Position: 3
 Default value: All commands in the PSSession, except for commands with the same names as commands in the current session.
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -315,9 +314,9 @@ Valid values are:
 
 -- Alias: The Windows PowerShell aliases in the remote session.
 -- All: The cmdlets and functions in the remote session.
--- Application: All the files other than Windows-PowerShell files in the paths that are listed in the Path environment variable ($env:path) in the remote session, including .txt, .exe, and .dll files.
+-- Application: All the files other than Windows-PowerShell files in the paths that are listed in the Path environment variable \($env:path\) in the remote session, including .txt, .exe, and .dll files.
 -- Cmdlet: The cmdlets in the remote session. "Cmdlet" is the default.
--- ExternalScript: The .ps1 files in the paths listed in the Path environment variable ($env:path) in the remote session.
+-- ExternalScript: The .ps1 files in the paths listed in the Path environment variable \($env:path\) in the remote session.
 -- Filter and Function: The Windows PowerShell functions in the remote session.
 -- Script: The script blocks in the remote session.
 
@@ -329,7 +328,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Cmdlet
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -353,7 +352,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -379,7 +378,7 @@ Aliases:
 Required: False
 Position: 4
 Default value: Types in the System.Management.Automation namespace
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -400,7 +399,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: All command in the PSSession, except for commands with the same names as commands in the current session.
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -419,7 +418,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -437,16 +436,16 @@ Aliases:
 Required: True
 Position: 1
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Certificate
-Specifies the client certificate that is used to sign the format files (*.Format.ps1xml) or script module files (.psm1) in the temporary module that Import-PSSession creates.
+Specifies the client certificate that is used to sign the format files \(*.Format.ps1xml\) or script module files \(.psm1\) in the temporary module that Import-PSSession creates.
 
 Enter a variable that contains a certificate or a command or expression that gets the certificate.
 
-To find a certificate, use the Get-PfxCertificate cmdlet or use the Get-ChildItem cmdlet in the Certificate (Cert:) drive.
+To find a certificate, use the Get-PfxCertificate cmdlet or use the Get-ChildItem cmdlet in the Certificate \(Cert:\) drive.
 If the certificate is not valid or does not have sufficient authority, the command fails.
 
 ```yaml
@@ -457,7 +456,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -510,9 +509,11 @@ To use Import-PSSession, the execution policy in the current session cannot be R
 To use Import-PSSession without changing the execution policy for the local computer, use the Scope parameter of Set-ExecutionPolicy to set a less restrictive execution policy for a single process.
 
 In Windows PowerShell 2.0, help topics for commands that are imported from another session do not include the prefix that you assign by using the Prefix parameter.
-To get help for an imported command in Windows PowerShell 2.0, use the original (non-prefixed) command name.
+To get help for an imported command in Windows PowerShell 2.0, use the original \(non-prefixed\) command name.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135221)
 
 [Export-PSSession](bf3d70a2-59d8-465f-9004-1d4b270052c3)
 
@@ -523,4 +524,5 @@ To get help for an imported command in Windows PowerShell 2.0, use the original 
 [about_PSSessions](7a9b4e0e-fa1b-47b0-92f6-6e2995d70acb)
 
 [about_Jobs](7362512a-8a4e-4575-b2ea-a740e5c4f002)
+
 

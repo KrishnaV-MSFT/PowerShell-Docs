@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113336
 schema: 2.0.0
 ---
 
@@ -51,7 +50,7 @@ PS C:\>Compare-Object (Get-Variable -Scope 0) (Get-Variable -Scope 1)
 The first command gets only the variables that are defined in the local scope.
 It is equivalent to "Get-Variable -Scope Local" and can be abbreviated as "gv -s 0".
 
-The second command uses the Compare-Object cmdlet to find the variables that are defined in the parent scope (Scope 1) but are visible only in the local scope (Scope 0).
+The second command uses the Compare-Object cmdlet to find the variables that are defined in the parent scope \(Scope 1\) but are visible only in the local scope \(Scope 0\).
 
 ## PARAMETERS
 
@@ -67,7 +66,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -83,7 +82,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -100,13 +99,13 @@ Aliases:
 Required: False
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: true (ByValue, ByPropertyName)
 Accept wildcard characters: True
 ```
 
 ### -Scope
 Gets only the variables in the specified scope.
-Valid values are "Global", "Local", or "Script", or a number relative to the current scope (0 through the number of scopes, where 0 is the current scope and 1 is its parent).
+Valid values are "Global", "Local", or "Script", or a number relative to the current scope \(0 through the number of scopes, where 0 is the current scope and 1 is its parent\).
 "Local" is the default.
 For more information, see about_Scopes.
 
@@ -118,7 +117,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Local
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -133,7 +132,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -154,6 +153,8 @@ To manage environment variables, you can use the environment variable provider.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113336)
+
 [Clear-Variable](e8e9af2f-e5c9-4ab8-8518-b305b1c4494a)
 
 [New-Variable](5c7c621f-c086-4286-8f9b-86cadecb8c0b)
@@ -161,4 +162,5 @@ To manage environment variables, you can use the environment variable provider.
 [Remove-Variable](a58fb01b-6bb4-48e9-a07c-5ad907dc4791)
 
 [Set-Variable](a961f6e3-12d2-4210-a039-62f502623a8c)
+
 

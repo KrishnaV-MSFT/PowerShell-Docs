@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113359
 schema: 2.0.0
 ---
 
@@ -78,7 +77,7 @@ Aliases:
 Required: True
 Position: 2
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -96,7 +95,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -112,7 +111,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -127,7 +126,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -142,7 +141,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -158,7 +157,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -168,8 +167,8 @@ Sets the startup type of the service.
 
 Valid values are:
 
---  Manual:      The service is started only manually, by a user (using the Service Control Manager) or by an application.
---  Automatic:  The service is to be started (or was started) by the operating system, at system start-up. If an automatically started service depends on a manually started service, the manually started service is also started automatically at system startup.
+--  Manual:      The service is started only manually, by a user \(using the Service Control Manager\) or by an application.
+--  Automatic:  The service is to be started \(or was started\) by the operating system, at system start-up. If an automatically started service depends on a manually started service, the manually started service is also started automatically at system startup.
 -- Disabled: The service is disabled and cannot be started by a user or application.
 
 ```yaml
@@ -180,7 +179,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Automatic
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -198,9 +197,11 @@ New-Service returns an object that represents the new service.
 To run this cmdlet on Windows Vista and later versions of Windows, start Windows PowerShell with the "Run as administrator" option.
 
 To delete a service, use Sc.exe, or use the Get-WmiObject cmdlet to get the Win32_Service object that represents the service and then use the Delete method to delete the service.
-(The object that Get-Service returns does not have a delete method.) For an example, see the Examples section.
+\(The object that Get-Service returns does not have a delete method.\) For an example, see the Examples section.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113359)
 
 [Get-Service](77f3c94b-6ffd-4906-8216-3debbf5ffe79)
 
@@ -215,4 +216,5 @@ To delete a service, use Sc.exe, or use the Get-WmiObject cmdlet to get the Win3
 [Stop-Service](58033475-759b-42e4-9395-c077aa55934e)
 
 [Suspend-Service](5b8bd69a-0a18-4478-b257-d442ddef417c)
+
 

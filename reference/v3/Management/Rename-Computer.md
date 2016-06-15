@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135253
 schema: 2.0.0
 ---
 
@@ -54,7 +53,7 @@ It uses the Header parameter to specify the column header names of each of the t
 This creates a collection of custom objects in $a, each of which has an OldName and NewName property.
 
 The second command runs the Rename-Computer cmdlet on each object in the $a variable.
-It specifies the old name (the value of the OldName property) for the value of the ComputerName parameter and the new name (the value of the NewName property) for the value of the NewName parameter.
+It specifies the old name \(the value of the OldName property\) for the value of the ComputerName parameter and the new name \(the value of the NewName property\) for the value of the NewName parameter.
 The command specifies domain credentials and uses the Force and Restart parameters to suppress all user prompts and restart each computer after it is renamed.
 
 ## PARAMETERS
@@ -63,8 +62,8 @@ The command specifies domain credentials and uses the Force and Restart paramete
 Renames the specified remote computer.
 The default is the local computer.
 
-Type the NetBIOS name, an Internet Protocol (IP) address, or a fully qualified domain name of a remote computer.
-To specify the local computer, type the computer name, a dot (.), or "localhost".
+Type the NetBIOS name, an Internet Protocol \(IP\) address, or a fully qualified domain name of a remote computer.
+To specify the local computer, type the computer name, a dot \(.\), or "localhost".
 
 This parameter does not rely on Windows PowerShell remoting.
 You can use the ComputerName parameter of Rename-Computer even if your computer is not configured to run remote commands.
@@ -77,7 +76,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Local computer
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -98,7 +97,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -114,7 +113,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -135,7 +134,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Current user
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -152,7 +151,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -168,7 +167,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -184,7 +183,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -198,8 +197,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -215,8 +214,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -236,6 +235,8 @@ Otherwise, it does not return any output.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135253)
+
 [Add-Computer](712f3460-c5d0-4af8-8de6-6d06e4a1a838)
 
 [Remove-Computer](89871167-713a-4f43-af35-e2891b8849e6)
@@ -245,4 +246,5 @@ Otherwise, it does not return any output.
 [Restart-Computer](ba50f64c-866e-4315-91c7-0ce16b44c47e)
 
 [Stop-Computer](bae0484a-418a-432c-a172-34b5165dd0b1)
+
 

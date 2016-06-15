@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113280
 schema: 2.0.0
 ---
 
@@ -34,7 +33,7 @@ Add-Member [-NotePropertyMembers] <IDictionary> [-Force] [-PassThru] [-TypeName 
 ```
 
 ## DESCRIPTION
-The Add-Member cmdlet lets you add members (properties and methods) to an instance of a Windows PowerShell object.
+The Add-Member cmdlet lets you add members \(properties and methods\) to an instance of a Windows PowerShell object.
 For example, you can add a NoteProperty member that contains a description of the object or a ScriptMethod member that runs a script to change the object.
 
 To use Add-Member, pipe the object to Add-Member, or use the InputObject parameter to specify the object.
@@ -66,7 +65,7 @@ Done
 
 These commands add the Status note property with a value of "Done" to the FileInfo object that represents the Test.txt file.
 
-The first command uses the Get-ChildItem cmdlet (alias = "dir) to get the Test.txt file.
+The first command uses the Get-ChildItem cmdlet \(alias = "dir\) to get the Test.txt file.
 It saves it in the $a variable.
 
 The second and third commands add the note property to the object in $a.
@@ -87,7 +86,7 @@ PS C:\>$a.FileLength
 These commands add the FileLength alias property to the object that represents the Test.txt file.
 The new property is an alias for the Length property.
 
-The first command use the Get-ChildItem cmdlet (alias = "dir") to get the Test.txt file.
+The first command use the Get-ChildItem cmdlet \(alias = "dir"\) to get the Test.txt file.
 
 The second command adds the FileLength alias property.
 
@@ -184,7 +183,7 @@ PS C:\>function Copy-Property ($From, $To)
      foreach ($p in Get-Member -InputObject $From -MemberType Property)
   {
      Add-Member -InputObject $To -MemberType NoteProperty -Name $p.Name
-     -Value $From.$($p.Name) -Force
+     -Value $From.$($p.Name) –Force
      $To.$($p.Name) = $From.$($p.Name)
   }
 }
@@ -249,7 +248,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -265,7 +264,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -275,7 +274,7 @@ This parameter is mandatory.
 
 The valid values for this parameter are: "NoteProperty,AliasProperty,ScriptProperty,CodeProperty,ScriptMethod,CodeMethod" AliasProperty, CodeMethod, CodeProperty, Noteproperty, ScriptMethod, and ScriptProperty.
 
-For information about these values, see "PSMemberTypes Enumeration" in MSDN at http://msdn.microsoft.com/library/windows/desktop/system.management.automation.psmembertypes(v=vs.85).aspxhttp://msdn.microsoft.com/library/windows/desktop/system.management.automation.psmembertypes(v=vs.85).aspx.
+For information about these values, see "PSMemberTypes Enumeration" in MSDN at http://msdn.microsoft.com/library/windows/desktop/system.management.automation.psmembertypes\(v=vs.85\).aspxhttp://msdn.microsoft.com/library/windows/desktop/system.management.automation.psmembertypes\(v=vs.85\).aspx.
 
 Not all objects have every type of member.
 If you specify a member type that the object does not have, Windows PowerShell returns an error.
@@ -288,7 +287,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -303,7 +302,7 @@ Aliases:
 Required: True
 Position: 2
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -326,14 +325,14 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -SecondValue
 Specifies optional additional information about AliasProperty, ScriptProperty, CodeProperty, or CodeMethod members.
 If used when adding an AliasProperty, this parameter must be a data type.
-A conversion (cast) to the specified data type is added to the value of the AliasProperty.
+A conversion \(cast\) to the specified data type is added to the value of the AliasProperty.
 For example, if you add an AliasProperty that provides an alternate name for a string property, you can also specify a SecondValue parameter of System.Int32 to indicate that the value of that string property should be converted to an integer when accessed by using the corresponding AliasProperty.
 
 You can use the SecondValue parameter to specify an additional ScriptBlock when adding a ScriptProperty member.
@@ -348,7 +347,7 @@ Aliases:
 Required: False
 Position: 4
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -364,7 +363,7 @@ Aliases:
 Required: False
 Position: 3
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -372,7 +371,7 @@ Accept wildcard characters: False
 Specifies a hash table or ordered dictionary of note property names and values.
 Type a hash table or dictionary in which the keys are note property names and the values are note property values.
 
-For more information about hash tables and ordered dictionaries in Windows PowerShell, see about_Hash_Tables (http://go.microsoft.com/fwlink/?LinkID=135175).
+For more information about hash tables and ordered dictionaries in Windows PowerShell, see about_Hash_Tables \(http://go.microsoft.com/fwlink/?LinkID=135175\).
 
 This parameter is introduced in Windows PowerShell 3.0.
 
@@ -384,7 +383,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -392,7 +391,7 @@ Accept wildcard characters: False
 Adds a note property with the specified name.
 
 Use this parameter with the NotePropertyValue parameter.
-The parameter name (-NotePropertyName) is optional.
+The parameter name \(-NotePropertyName\) is optional.
 
 This parameter is introduced in Windows PowerShell 3.0.
 
@@ -404,7 +403,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -412,7 +411,7 @@ Accept wildcard characters: False
 Adds a note property with the specified value.
 
 Use this parameter with the NotePropertyName parameter.
-The parameter name (-NotePropertyValue) is optional.
+The parameter name \(-NotePropertyValue\) is optional.
 
 This parameter is introduced in Windows PowerShell 3.0.
 
@@ -424,7 +423,7 @@ Aliases:
 Required: True
 Position: 2
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -445,7 +444,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -457,7 +456,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -483,9 +482,11 @@ If you include the parameter names, the parameters can appear in any order.
 
 You can use the $this automatic variable in script blocks that define the values of new properties and methods.
 The $this variable refers to the instance of the object to which the properties and methods are being added.
-For more information about the $this variable, see about_Automatic_Variables (http://go.microsoft.com/fwlink/?LinkID=113212).
+For more information about the $this variable, see about_Automatic_Variables \(http://go.microsoft.com/fwlink/?LinkID=113212\).
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113280)
 
 [Export-Clixml](685168d4-9831-4f08-9452-2478a98172fb)
 
@@ -496,4 +497,5 @@ For more information about the $this variable, see about_Automatic_Variables (ht
 [New-Object](1d5cac3b-9cd0-4efe-be3e-1ee8d4675f51)
 
 [about_Automatic_Variables](3a240eb3-3f5f-4bc5-80cd-7a5d53c9fe43)
+
 

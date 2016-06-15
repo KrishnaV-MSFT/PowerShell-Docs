@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Core.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=144299
 schema: 2.0.0
 ---
 
@@ -15,10 +14,10 @@ Disable-PSSessionConfiguration [[-Name] <String[]>] [-Force] [-Confirm] [-WhatIf
 ```
 
 ## DESCRIPTION
-The Disable-PSSessionConfiguration cmdlet disables session configurations on the local computer, thereby preventing all users from using the session configurations to create a user-managed sessions ("PSSessions") on the local computer.
+The Disable-PSSessionConfiguration cmdlet disables session configurations on the local computer, thereby preventing all users from using the session configurations to create a user-managed sessions \("PSSessions"\) on the local computer.
 This is an advanced cmdlet that is designed to be used by system administrators to manage customized session configurations for their users.
 
-Beginning in Windows PowerShell 3.0, the Disable-PSSessionConfiguration cmdlet sets the Enabled setting of the session configuration (WSMan:\localhost\Plugins\\\<SessionConfiguration\>\Enabled) to "False".
+Beginning in Windows PowerShell 3.0, the Disable-PSSessionConfiguration cmdlet sets the Enabled setting of the session configuration \(WSMan:\localhost\Plugins\\\<SessionConfiguration\>\Enabled\) to "False".
 
 In Windows PowerShell 2.0, the Disable-PSSessionConfiguration cmdlet adds a "Deny_All" entry to the security descriptor of one or more registered session configurations.
 
@@ -58,7 +57,7 @@ PS C:\>Get-PSSessionConfiguration -Name MaintenanceShell, AdminShell | Disable-P
 
 This command disables the MaintenanceShell and AdminShell session configurations.
 
-The command uses a pipeline operator (|) to send the results of a Get-PSSessionConfiguration command to Disable-PSSessionConfiguration.
+The command uses a pipeline operator \(|\) to send the results of a Get-PSSessionConfiguration command to Disable-PSSessionConfiguration.
 
 ### -------------------------- EXAMPLE 5 --------------------------
 ```
@@ -120,7 +119,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -140,7 +139,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: Microsoft.PowerShell
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: true (ByValue, ByPropertyName)
 Accept wildcard characters: True
 ```
 
@@ -154,8 +153,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -171,8 +170,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -190,6 +189,8 @@ This cmdlet does not return any objects.
 To run this cmdlet on Windows Vista, Windows Server 2008, and later versions of Windows, you must start Windows PowerShell with the "Run as administrator" option.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=144299)
 
 [Disable-PSSessionConfiguration](63ca7455-b2bc-42ba-b127-d0f1c0babc6a)
 
@@ -214,4 +215,5 @@ To run this cmdlet on Windows Vista, Windows Server 2008, and later versions of 
 [about_Session_Configurations](d7c44f7f-a63b-4aeb-9081-1b64585b1259)
 
 [about_Session_Configuration_Files](c7217447-1ebf-477b-a8ef-4dbe9a1473b8)
+
 

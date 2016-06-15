@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113286
 schema: 2.0.0
 ---
 
@@ -20,9 +19,9 @@ Compare-Object [-ReferenceObject] <PSObject[]> [-DifferenceObject] <PSObject[]> 
 The Compare-Object cmdlet compares two sets of objects.
 One set of objects is the "reference set," and the other set is the "difference set."
 
-The result of the comparison indicates whether a property value appeared only in the object from the reference set (indicated by the \<= symbol), only in the object from the difference set (indicated by the =\> symbol) or, if the IncludeEqual parameter is specified, in both objects (indicated by the == symbol).
+The result of the comparison indicates whether a property value appeared only in the object from the reference set \(indicated by the \<= symbol\), only in the object from the difference set \(indicated by the =\> symbol\) or, if the IncludeEqual parameter is specified, in both objects \(indicated by the == symbol\).
 
-NOTE:  If the reference set or the difference set is null ($null), Compare-Object generates a terminating error.
+NOTE:  If the reference set or the difference set is null \($null\), Compare-Object generates a terminating error.
 
 ## EXAMPLES
 
@@ -75,7 +74,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -90,7 +89,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -105,7 +104,7 @@ Aliases:
 Required: True
 Position: 2
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -120,7 +119,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -136,7 +135,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -152,7 +151,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -167,7 +166,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -182,7 +181,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -199,7 +198,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: [Int32]::MaxValue
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -218,6 +217,8 @@ Otherwise, this cmdlet does not generate any output.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113286)
+
 [ForEach-Object](00000000-0000-0000-0000-000000000000)
 
 [Group-Object](494af40a-1315-420f-8bd6-932006576dac)
@@ -233,4 +234,5 @@ Otherwise, this cmdlet does not generate any output.
 [Tee-Object](ae5c403c-6a21-430e-a94a-74a1edee149a)
 
 [Where-Object](00000000-0000-0000-0000-000000000000)
+
 

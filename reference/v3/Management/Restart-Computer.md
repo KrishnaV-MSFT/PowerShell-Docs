@@ -1,12 +1,11 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135253
 schema: 2.0.0
 ---
 
 # Restart-Computer
 ## SYNOPSIS
-Restarts ("reboots") the operating system on local and remote computers.
+Restarts \("reboots"\) the operating system on local and remote computers.
 
 ## SYNTAX
 
@@ -94,7 +93,7 @@ These commands force an immediate restart of all of the computers in Domain01.
 PS C:\>Restart-Computer -ComputerName Server01 -Wait -For PowerShell -Timeout 300 -Delay 2
 ```
 
-This command restarts the Server01 remote computer and then waits up to 5 minutes (300 seconds) for Windows PowerShell to be available on the restarted computer before continuing.
+This command restarts the Server01 remote computer and then waits up to 5 minutes \(300 seconds\) for Windows PowerShell to be available on the restarted computer before continuing.
 
 The command uses the Wait, For, and Timeout parameters to specify the conditions of the wait.
 It uses the Delay parameter to reduce the interval between queries to the remote computer that determine whether it is restarted.
@@ -115,7 +114,7 @@ These settings are designed for enterprises in which DCOM-based restarts fail be
 Runs the command as a background job.
 
 Note: To use this parameter, the local and remote computers must be configured for remoting and, on Windows Vista and later versions of Windows, you must open Windows PowerShell with the "Run as administrator" option.
-For more information, see about_Remote_Requirements (http://go.microsoft.com/fwlink/?LinkID=135187).
+For more information, see about_Remote_Requirements \(http://go.microsoft.com/fwlink/?LinkID=135187\).
 
 When you use the AsJob parameter, the command immediately returns an object that represents the background job.
 You can continue to work in the session while the job completes.
@@ -123,7 +122,7 @@ The job is created on the local computer and the results from remote computers a
 To manage the job, use the Job cmdlets.
 To get the job results, use the Receive-Job cmdlet.
 
-For more information about Windows PowerShell background jobs, see about_Jobs (http://go.microsoft.com/fwlink/?LinkID=113251) and about_Remote_Jobs (http://go.microsoft.com/fwlink/?LinkID=135184).
+For more information about Windows PowerShell background jobs, see about_Jobs \(http://go.microsoft.com/fwlink/?LinkID=113251\) and about_Remote_Jobs \(http://go.microsoft.com/fwlink/?LinkID=135184\).
 
 ```yaml
 Type: SwitchParameter
@@ -133,7 +132,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -142,7 +141,7 @@ Specifies one or more remote computers.
 The default is the local computer.
 
 Type the NETBIOS name, an IP address, or a fully qualified domain name of a remote computer.
-To specify the local computer, type the computer name, a dot (.), or "localhost".
+To specify the local computer, type the computer name, a dot \(.\), or "localhost".
 
 This parameter does not rely on Windows PowerShell remoting.
 You can use the ComputerName parameter even if your computer is not configured to run remote commands.
@@ -173,14 +172,14 @@ Aliases:
 Required: False
 Position: 2
 Default value: Current user
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Delay
 Determines how often Windows PowerShell queries the service that is specified by the For parameter to determine whether it is available after the computer is restarted.
 Specify a delay between queries, in seconds.
-The default value is 5 (seconds).
+The default value is 5 \(seconds\).
 
 This parameter is valid only with the Wait and For parameters.
 
@@ -194,7 +193,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 5
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -220,7 +219,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Default
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -235,13 +234,13 @@ Aliases: f
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Impersonation
 Specifies the impersonation level to use when calling WMI.
-(Restart-Computer uses WMI.) The default value is "Impersonate".\
+\(Restart-Computer uses WMI.\) The default value is "Impersonate".\
 
 Valid values are:
 
@@ -258,7 +257,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Impersonate
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -276,7 +275,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 32
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -297,7 +296,7 @@ Aliases: TimeoutSec
 Required: False
 Position: Named
 Default value: -1
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -320,13 +319,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -DcomAuthentication
 Specifies the authentication level that is used for the  WMI connection.
-(Restart-Computer uses WMI.) The default value is Packet.
+\(Restart-Computer uses WMI.\) The default value is Packet.
 
 Valid values are:
 
@@ -351,7 +350,7 @@ Aliases: Authentication
 Required: False
 Position: Named
 Default value: Packet
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -370,7 +369,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: DCOM
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -381,7 +380,7 @@ Valid values are Basic, CredSSP, Default, Digest, Kerberos, and Negotiate.
 The default value is Default.
 For more information about the values of this parameter, see "AuthenticationMechanism Enumeration" in MSDN at http://go.microsoft.com/fwlink/?LinkID=235230.
 
-Caution: Credential Security Service Provider (CredSSP) authentication, in which the user's credentials are passed to a remote computer to be authenticated, is designed for commands that require authentication on more than one resource, such as accessing a remote network share.
+Caution: Credential Security Service Provider \(CredSSP\) authentication, in which the user's credentials are passed to a remote computer to be authenticated, is designed for commands that require authentication on more than one resource, such as accessing a remote network share.
 This mechanism increases the security risk of the remote operation.
 If the remote computer is compromised, the credentials that are passed to it can be used to control the network session.
 
@@ -395,7 +394,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Default
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -409,8 +408,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -426,8 +425,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -453,6 +452,8 @@ In Windows PowerShell 3.0, the implementation is changed to resolve this problem
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135253)
+
 [Add-Computer](712f3460-c5d0-4af8-8de6-6d06e4a1a838)
 
 [Checkpoint-Computer](9ef7dd97-dbd9-43de-8988-9ab85e7827ad)
@@ -466,4 +467,5 @@ In Windows PowerShell 3.0, the implementation is changed to resolve this problem
 [Stop-Computer](bae0484a-418a-432c-a172-34b5165dd0b1)
 
 [Test-Connection](7c54e3a1-8d8c-44ad-9056-ef0514c158d6)
+
 

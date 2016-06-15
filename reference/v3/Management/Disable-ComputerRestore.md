@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135207
 schema: 2.0.0
 ---
 
@@ -61,7 +60,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -75,8 +74,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -92,8 +91,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -113,9 +112,11 @@ To run a Disable-ComputerRestore command on Windows Vista and later versions of 
 To find the file system drives that are eligible for system restore, in System in Control Panel, see the System Protection tab.
 To open this tab in Windows PowerShell, type "SystemPropertiesProtection".
 
-This cmdlet uses the Windows Management Instrumentation (WMI) SystemRestore class.
+This cmdlet uses the Windows Management Instrumentation \(WMI\) SystemRestore class.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135207)
 
 [Checkpoint-Computer](9ef7dd97-dbd9-43de-8988-9ab85e7827ad)
 
@@ -126,4 +127,5 @@ This cmdlet uses the Windows Management Instrumentation (WMI) SystemRestore clas
 [Restart-Computer](ba50f64c-866e-4315-91c7-0ce16b44c47e)
 
 [Restore-Computer](c570f18d-f1dd-462a-b00b-3eb1d2a81dfc)
+
 

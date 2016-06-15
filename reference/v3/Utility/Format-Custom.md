@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113301
 schema: 2.0.0
 ---
 
@@ -51,7 +50,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -61,7 +60,7 @@ This parameter is rarely used, but can be used as a debugging aid when you are f
 The following shows an example of the results of adding the DisplayError parameter with an expression.
 
 PS \> Get-Date | Format-Custom DayOfWeek,{ $_ / $null } -ShowError
-DayOfWeek  $_ / $null
+DayOfWeek  $_ / $null
 --------- ------------
 Wednesday #ERR
 
@@ -73,13 +72,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Expand
 Formats the collection object, as well as the objects in the collection.
-This parameter is designed to format objects that support the ICollection (System.Collections) interface.
+This parameter is designed to format objects that support the ICollection \(System.Collections\) interface.
 The default value is EnumOnly.
 
 Valid values are:
@@ -96,7 +95,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: EnumOnly
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -113,7 +112,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -125,7 +124,7 @@ The value of the GroupBy parameter can be a new calculated property.
 To create a calculated, property, use a hash table.
 Valid keys are:
 
--- Name (or Label) \<string\>
+-- Name \(or Label\) \<string\>
 -- Expression \<string\> or \<script block\>
 -- FormatString \<string\>
 
@@ -137,7 +136,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -153,7 +152,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -162,7 +161,7 @@ Specifies the object properties that appear in the display and the order in whic
 Wildcards are permitted.
 
 If you omit this parameter, the properties that appear in the display depend on the object being displayed.
-The parameter name ("Property") is optional.
+The parameter name \("Property"\) is optional.
 You cannot use the Property and View parameters in the same command.
 
 The value of the Property parameter can be a new calculated property.
@@ -180,7 +179,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -195,7 +194,7 @@ DayOfWeek  $_ / $null
 Wednesday
 
 Failed to evaluate expression " $_ / $null ".
-    + CategoryInfo          : InvalidArgument: (10/30/2013 2:28:07 PM:PSObject) \[\], RuntimeException
+    + CategoryInfo          : InvalidArgument: \(10/30/2013 2:28:07 PM:PSObject\) \[\], RuntimeException
     + FullyQualifiedErrorId : mshExpressionError
 
 ```yaml
@@ -206,7 +205,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -222,7 +221,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Default custom view
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -248,4 +247,7 @@ The GroupBy parameter assumes that the objects are sorted.
 Before using Format-Custom to group the objects, use Sort-Object to sort them.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113301)
+
 

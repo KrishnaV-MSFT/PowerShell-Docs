@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113447
 schema: 2.0.0
 ---
 
@@ -68,7 +67,7 @@ This command uses the InputObject parameter of Update-List to specify the mailbo
 The value of InputObject is the mailbox in the $m variable.
 It uses the Property parameter to specify the Aliases property and the Add and Remove parameters to specify the items being added to and removed from the value of Aliases.
 
-The command uses a pipeline operator (|) to send the updated mailbox object to the Set-Mailbox cmdlet, which changes the mailbox.
+The command uses a pipeline operator \(|\) to send the updated mailbox object to the Set-Mailbox cmdlet, which changes the mailbox.
 
 ### -------------------------- EXAMPLE 3 --------------------------
 ```
@@ -112,7 +111,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -128,7 +127,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -144,7 +143,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -159,7 +158,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -175,7 +174,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -193,5 +192,8 @@ Update-List returns the updated object, or it returns an object that represents 
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113447)
+
 [Select-Object](2f182056-7955-4b77-9c58-64ab4a680074)
+
 

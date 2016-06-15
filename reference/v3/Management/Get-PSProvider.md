@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113329
 schema: 2.0.0
 ---
 
@@ -82,7 +81,7 @@ PS C:\>(get-psprovider FileSystem).home
 C:\Users\User01
 ```
 
-This example shows that the tilde symbol (~) represents the value of the Home property of the FileSystem provider.
+This example shows that the tilde symbol \(~\) represents the value of the Home property of the FileSystem provider.
 The Home property value is optional, but for the FileSystem provider, it is defined as $env:homedrive\$env:homepath or $home.
 
 ## PARAMETERS
@@ -98,7 +97,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -116,5 +115,8 @@ Get-PSProvider returns objects that represent the Windows PowerShell providers i
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113329)
+
 [about_Providers](55e2974f-3314-48d2-8b1b-abdea6b303cb)
+
 

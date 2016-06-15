@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Core.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113316
 schema: 2.0.0
 ---
 
@@ -77,8 +76,8 @@ If you enter a word or word pattern that appears in several help topic titles, G
 If you enter a word that does not appear in any help topic titles, Get-Help displays a list of topics that include that word in their contents.
 
 Get-Help can get help topics for all supported languages and locales.
-Get-Help first looks for help files in the locale set for Windows, then in the parent locale (such as "pt" for "pt-BR"), and then in a fallback locale.
-Beginning in Windows PowerShell 3.0, if Get-Help does not find help in the fallback locale, it looks for help topics in English ("en-US") before returning an error message or displaying auto-generated help.
+Get-Help first looks for help files in the locale set for Windows, then in the parent locale \(such as "pt" for "pt-BR"\), and then in a fallback locale.
+Beginning in Windows PowerShell 3.0, if Get-Help does not find help in the fallback locale, it looks for help topics in English \("en-US"\) before returning an error message or displaying auto-generated help.
 
 For information about the symbols that Get-Help displays in the command syntax diagram, see about_Command_Syntaxhttp://go.microsoft.com/fwlink/?LinkID=113215.
 For information about parameter attributes, such as Required and Position, see about_Parametershttp://go.microsoft.com/fwlink/?LinkID=113243.
@@ -209,7 +208,7 @@ PS C:\>Get-Help Format-List -Parameter GroupBy
 ```
 
 This command uses the Parameter parameter of Get-Help to display a  detailed description of the GroupBy parameter of the Format-List cmdlet.
-For detailed descriptions of all parameters of the Format-List cmdlet, type "Get-Help Format-List -Parameter *".
+For detailed descriptions of all parameters of the Format-List cmdlet, type "Get-Help Format-List –Parameter *".
 
 ### -------------------------- EXAMPLE 10 --------------------------
 ```
@@ -316,7 +315,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: All categories
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -324,7 +323,7 @@ Accept wildcard characters: False
 Displays commands with the specified component value, such as "Exchange." Enter a component name.
 Wildcards are permitted.
 
-This parameter has no effect on displays of conceptual ("About_") help.
+This parameter has no effect on displays of conceptual \("About_"\) help.
 
 ```yaml
 Type: String[]
@@ -334,7 +333,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: All components
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -342,7 +341,7 @@ Accept wildcard characters: True
 Adds parameter descriptions and examples to the basic help display.
 
 This parameter is effective only when help files are for the command are installed on the computer.
-It has no effect on displays of conceptual ("About_") help.
+It has no effect on displays of conceptual \("About_"\) help.
 
 ```yaml
 Type: SwitchParameter
@@ -352,16 +351,16 @@ Aliases:
 Required: True
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Examples
 Displays only the name, synopsis, and examples.
-To display only the examples, type "(Get-Help \<cmdlet-name\>).Examples".
+To display only the examples, type "\(Get-Help \<cmdlet-name\>\).Examples".
 
 This parameter is effective only when help files are for the command are installed on the computer.
-It has no effect on displays of conceptual ("About_") help.
+It has no effect on displays of conceptual \("About_"\) help.
 
 ```yaml
 Type: SwitchParameter
@@ -371,7 +370,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -379,7 +378,7 @@ Accept wildcard characters: False
 Displays the entire help topic for a cmdlet, including parameter descriptions and attributes, examples, input and output object types, and additional notes.
 
 This parameter is effective only when help files are for the command are installed on the computer.
-It has no effect on displays of conceptual ("About_") help.
+It has no effect on displays of conceptual \("About_"\) help.
 
 ```yaml
 Type: SwitchParameter
@@ -389,7 +388,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -398,7 +397,7 @@ Displays help for items with the specified functionality.
 Enter the functionality.
 Wildcards are permitted.
 
-This parameter has no effect on displays of conceptual ("About_") help.
+This parameter has no effect on displays of conceptual \("About_"\) help.
 
 ```yaml
 Type: String[]
@@ -408,7 +407,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: All functionality values
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -433,7 +432,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: None
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: True
 ```
 
@@ -442,7 +441,7 @@ Displays the online version of a help topic in the default Internet browser.
 This parameter is valid only for cmdlet, function, workflow and script help topics.
 You cannot use the Online parameter in Get-Help commands in a remote session.
 
-For information about supporting this feature in help topics that you write, see about_Comment_Based_Help (http://go.microsoft.com/fwlink/?LinkID=144309), and "Supporting Online Help" (http://go.microsoft.com/fwlink/?LinkID=242132), and "How to Write Cmdlet Help" (http://go.microsoft.com/fwlink/?LinkID=123415) in the MSDN (Microsoft Developer Network) library.
+For information about supporting this feature in help topics that you write, see about_Comment_Based_Help \(http://go.microsoft.com/fwlink/?LinkID=144309\), and "Supporting Online Help" \(http://go.microsoft.com/fwlink/?LinkID=242132\), and "How to Write Cmdlet Help" \(http://go.microsoft.com/fwlink/?LinkID=123415\) in the MSDN \(Microsoft Developer Network\) library.
 
 ```yaml
 Type: SwitchParameter
@@ -452,7 +451,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -460,7 +459,7 @@ Accept wildcard characters: False
 Displays only the detailed descriptions of the specified parameters.
 Wildcards are permitted.
 
-This parameter has no effect on displays of conceptual ("About_") help.
+This parameter has no effect on displays of conceptual \("About_"\) help.
 
 ```yaml
 Type: String
@@ -470,7 +469,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: All parameters
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -484,9 +483,9 @@ To use this parameter, install the help file for the module that includes the pr
 
 To see the custom cmdlet help for a provider path, go to the provider path location and enter a Get-Help command or, from any path location, use the Path parameter of Get-Help to specify the provider path.
 You can also find custom cmdlet help online in the provider help section of the help topics.
-For example, you can find help for the New-Item cmdlet in the Wsman:\*\ClientCertificate path (http://go.microsoft.com/fwlink/?LinkID=158676).
+For example, you can find help for the New-Item cmdlet in the Wsman:\*\ClientCertificate path \(http://go.microsoft.com/fwlink/?LinkID=158676\).
 
-For more information about Windows PowerShell providers, see about_Providers (http://go.microsoft.com/fwlink/?LinkID=113250).
+For more information about Windows PowerShell providers, see about_Providers \(http://go.microsoft.com/fwlink/?LinkID=113250\).
 
 ```yaml
 Type: String
@@ -496,7 +495,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: All paths
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -517,7 +516,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: All roles
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -525,7 +524,7 @@ Accept wildcard characters: True
 Displays the help topic in a window for easier reading.
 The window includes a "Find" search feature and a "Settings" box that lets you set options for the display, including options to display only selected sections of a help topic.
 
-The ShowWindow parameter supports help topics for commands (cmdlets, functions, CIM commands, workflows, scripts) and conceptual "About" topics.
+The ShowWindow parameter supports help topics for commands \(cmdlets, functions, CIM commands, workflows, scripts\) and conceptual "About" topics.
 It does not support provider help.
 
 This parameter is introduced in Windows PowerShell 3.0.
@@ -538,7 +537,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -572,18 +571,20 @@ Get-Help displays help in the locale set for Windows or in the fallback language
 If you do not have help files for the primary or fallback locale, Get-Help behaves as though there are no help files on the computer.
 To get help for a different locale, use Region and Language in Control Panel to change the settings for Windows.
 
-The full view of help (-Full) includes a table of information about the parameters.
+The full view of help \(-Full\) includes a table of information about the parameters.
 The table includes the following fields:
 
--- Required:  Indicates whether the parameter is required (true) or optional (false).
--- Position:  Indicates whether the parameter is named or positional (numbered). Positional parameters must appear in a specified place in the command.
+-- Required:  Indicates whether the parameter is required \(true\) or optional \(false\).
+-- Position:  Indicates whether the parameter is named or positional \(numbered\). Positional parameters must appear in a specified place in the command.
 -- "Named" indicates that the parameter name is required, but that the parameter can appear anywhere in the command.
--- \<Number\> indicates that the parameter name is optional, but when the name is omitted, the parameter must be in the place specified by the number. For example, "2" indicates that when the parameter name is omitted, the parameter must be the second (2) or only unnamed parameter in the command. When the parameter name is used, the parameter can appear anywhere in the command.
+-- \<Number\> indicates that the parameter name is optional, but when the name is omitted, the parameter must be in the place specified by the number. For example, "2" indicates that when the parameter name is omitted, the parameter must be the second \(2\) or only unnamed parameter in the command. When the parameter name is used, the parameter can appear anywhere in the command.
 -- Default value: The parameter value that Windows PowerShell uses if you do not include the parameter in the command.
--- Accepts pipeline input: Indicates whether you can (true) or cannot (false) send objects to the parameter through a pipeline. "By Property Name" means that the pipelined object must have a property with the same name as the parameter name.
+-- Accepts pipeline input: Indicates whether you can \(true\) or cannot \(false\) send objects to the parameter through a pipeline. "By Property Name" means that the pipelined object must have a property with the same name as the parameter name.
 -- Accepts wildcard characters: Indicates whether the value of a parameter can include wildcard characters, such as * and ?.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113316)
 
 [Updatable Help Status Table (http://go.microsoft.com/fwlink/?LinkID=270007)](http://go.microsoft.com/fwlink/?LinkID=270007)
 
@@ -598,4 +599,5 @@ The table includes the following fields:
 [about_Comment_Based_Help](99a81ccc-21a0-49ec-a1b3-9efe2b4c0bbf)
 
 [about_Parameters](bb4f604f-6f61-4a74-99bb-83dee76ca680)
+
 

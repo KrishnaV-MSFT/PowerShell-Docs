@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Core.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=144308
 schema: 2.0.0
 ---
 
@@ -106,7 +105,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -126,7 +125,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: True
 ```
 
@@ -147,7 +146,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -161,8 +160,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -178,8 +177,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -197,6 +196,8 @@ This cmdlet does not return any objects.
 To run this cmdlet on Windows Vista, Windows Server 2008, and later versions of Windows, you must start Windows PowerShell with the "Run as administrator" option.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=144308)
 
 [Disable-PSSessionConfiguration](63ca7455-b2bc-42ba-b127-d0f1c0babc6a)
 
@@ -221,4 +222,5 @@ To run this cmdlet on Windows Vista, Windows Server 2008, and later versions of 
 [about_Session_Configurations](d7c44f7f-a63b-4aeb-9081-1b64585b1259)
 
 [about_Session_Configuration_Files](c7217447-1ebf-477b-a8ef-4dbe9a1473b8)
+
 

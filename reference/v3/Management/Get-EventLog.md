@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113314
 schema: 2.0.0
 ---
 
@@ -28,7 +27,7 @@ The Get-EventLog cmdlet gets events and event logs on the local and remote compu
 Use the parameters of Get-EventLog to search for events by using their property values.
 Get-EventLog gets only the events that match all of the specified property values.
 
-The cmdlets that contain the EventLog noun (the EventLog cmdlets) work only on classic event logs.
+The cmdlets that contain the EventLog noun \(the EventLog cmdlets\) work only on classic event logs.
 To get events from logs that use the Windows Event Log technology in Windows Vista and later versions of Windows, use Get-WinEvent.
 
 ## EXAMPLES
@@ -50,7 +49,7 @@ This command gets the five most recent entries from the Application event log.
 ### -------------------------- EXAMPLE 3 --------------------------
 ```
 PS C:\>$events = get-eventlog -logname system -newest 1000
-PS C:\>$events | group-object -property source -noelement | sort-object -property count -descending
+PS C:\>$events | group-object -property source -noelement | sort-object -property count –descending
 
 Count Name
 ----- ----
@@ -68,7 +67,7 @@ This example shows how to find all of the sources that are represented in the 10
 
 The first command gets the 1,000 most recent entries from the System event log and stores them in the $events variable.
 
-The second command uses a pipeline operator (|) to send the events in $events to the Group-Object cmdlet, which groups the entries by the value of the Source property.
+The second command uses a pipeline operator \(|\) to send the events in $events to the Group-Object cmdlet, which groups the entries by the value of the Source property.
 The command uses a second pipeline operator to send the grouped events to the Sort-Object cmdlet, which sorts them in descending order, so the most frequently appearing source is listed first.
 
 Source is just one property of event log entries.
@@ -129,7 +128,7 @@ This example shows how to display the property values of an event in a list.
 
 The first command gets the newest event from the System event log and saves it in the $a variable.
 
-The second command uses a pipeline operator (|) to send the event in $a to the Format-List command, which displays all (*) of the event properties.
+The second command uses a pipeline operator \(|\) to send the event in $a to the Format-List command, which displays all \(*\) of the event properties.
 
 ### -------------------------- EXAMPLE 9 --------------------------
 ```
@@ -176,7 +175,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -194,7 +193,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -209,7 +208,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -225,7 +224,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -233,8 +232,8 @@ Accept wildcard characters: False
 Specifies a remote computer.
 The default is the local computer.
 
-Type the NetBIOS name, an Internet Protocol (IP) address, or a fully qualified domain name of a remote computer.
-To specify the local computer, type the computer name, a dot (.), or "localhost".
+Type the NetBIOS name, an Internet Protocol \(IP\) address, or a fully qualified domain name of a remote computer.
+To specify the local computer, type the computer name, a dot \(.\), or "localhost".
 
 This parameter does not rely on Windows PowerShell remoting.
 You can use the ComputerName parameter of Get-EventLog even if your computer is not configured to run remote commands.
@@ -247,7 +246,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Local computer
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -264,7 +263,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: All events
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -279,7 +278,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: All events
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -294,7 +293,7 @@ Aliases:
 Required: False
 Position: 2
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -309,13 +308,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -LogName
 Specifies the event log. 
-Enter the log name (the value of the Log property; not the LogDisplayName) of one event log.
+Enter the log name \(the value of the Log property; not the LogDisplayName\) of one event log.
 Wildcard characters are not permitted.
 This parameter is required.
 
@@ -327,7 +326,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -344,7 +343,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -360,7 +359,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -376,7 +375,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -393,7 +392,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -405,16 +404,18 @@ You cannot pipe input to this cmdlet.
 ## OUTPUTS
 
 ### System.Diagnostics.EventLogEntry. System.Diagnostics.EventLog. System.String
-If the LogName parameter is specified, the output is a collection of EventLogEntry objects (System.Diagnostics.EventLogEntry).
+If the LogName parameter is specified, the output is a collection of EventLogEntry objects \(System.Diagnostics.EventLogEntry\).
 
-If only the List parameter is specified, the output is a collection of EventLog objects (System.Diagnostics.EventLog).
+If only the List parameter is specified, the output is a collection of EventLog objects \(System.Diagnostics.EventLog\).
 
-If both the List and AsString parameters are specified, the output is a collection of Strings (System.String).
+If both the List and AsString parameters are specified, the output is a collection of Strings \(System.String\).
 
 ## NOTES
-The Get-EventLog and Get-WinEvent cmdlets are not supported in Windows Preinstallation Environment (Windows PE).
+The Get-EventLog and Get-WinEvent cmdlets are not supported in Windows Preinstallation Environment \(Windows PE\).
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113314)
 
 [Clear-EventLog](525ef611-6484-4088-887c-e084f3f5763b)
 
@@ -429,4 +430,5 @@ The Get-EventLog and Get-WinEvent cmdlets are not supported in Windows Preinstal
 [Show-EventLog](a3b0f5ad-0438-42c7-915b-d1b4793a431c)
 
 [Write-EventLog](c93c4cd3-028f-4343-bfe6-b70f8f249290)
+
 

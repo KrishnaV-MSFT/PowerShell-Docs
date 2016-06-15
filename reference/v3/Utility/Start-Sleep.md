@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113407
 schema: 2.0.0
 ---
 
@@ -38,7 +37,7 @@ This command makes all commands in the session sleep for 15 seconds.
 PS C:\>Start-Sleep -m 500
 ```
 
-This command makes all the commands in the session sleep for one-half of a second (500 milliseconds).
+This command makes all the commands in the session sleep for one-half of a second \(500 milliseconds\).
 
 ## PARAMETERS
 
@@ -54,13 +53,13 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
 ### -Seconds
 Specifies how long the resource sleeps in seconds.
-You can omit the parameter name ("Seconds"), or you can abbreviate it as "-s".
+You can omit the parameter name \("Seconds"\), or you can abbreviate it as "-s".
 
 ```yaml
 Type: Int32
@@ -70,7 +69,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: true (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -89,4 +88,7 @@ You can also refer to Start-Sleep by its built-in alias, "sleep".
 For more information, see about_Aliases.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113407)
+
 

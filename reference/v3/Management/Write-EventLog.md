@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135281
 schema: 2.0.0
 ---
 
@@ -20,7 +19,7 @@ The Write-EventLog cmdlet writes an event to an event log.
 
 To write an event to an event log, the event log must exist on the computer and the source must be registered for the event log.
 
-The cmdlets that contain the EventLog noun (the EventLog cmdlets) work only on classic event logs.
+The cmdlets that contain the EventLog noun \(the EventLog cmdlets\) work only on classic event logs.
 To get events from logs that use the Windows Event Log technology in Windows Vista and later versions of Windows, use Get-WinEvent.
 
 ## EXAMPLES
@@ -53,7 +52,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 1
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -61,7 +60,7 @@ Accept wildcard characters: False
 Specifies a remote computer.
 The default is the local computer.
 
-Type the NetBIOS name, an Internet Protocol (IP) address, or a fully qualified domain name of a remote computer.
+Type the NetBIOS name, an Internet Protocol \(IP\) address, or a fully qualified domain name of a remote computer.
 
 This parameter does not rely on Windows PowerShell remoting.
 You can use the ComputerName parameter of Get-EventLog even if your computer is not configured to run remote commands.
@@ -74,7 +73,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Local computer
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -83,7 +82,7 @@ Specifies the entry type of the event.
 Valid values are Error, Warning, Information, SuccessAudit, and FailureAudit.
 The default value is Information.
 
-For a description of the values, see System.Diagnostics.EventLogEntryType in the MSDN (Microsoft Developer Network) library at http://go.microsoft.com/fwlink/?LinkId=143599.
+For a description of the values, see System.Diagnostics.EventLogEntryType in the MSDN \(Microsoft Developer Network\) library at http://go.microsoft.com/fwlink/?LinkId=143599.
 
 ```yaml
 Type: EventLogEntryType
@@ -93,7 +92,7 @@ Aliases:
 Required: False
 Position: 4
 Default value: Information
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -109,13 +108,13 @@ Aliases:
 Required: True
 Position: 3
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -LogName
 Specifies the name of the log to which the event is written.
-Enter the log name (the value of the Log property, not the LogDisplayName).
+Enter the log name \(the value of the Log property, not the LogDisplayName\).
 Wildcard characters are not permitted.
 This parameter is required.
 
@@ -127,7 +126,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -143,7 +142,7 @@ Aliases:
 Required: True
 Position: 5
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -158,7 +157,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -173,7 +172,7 @@ Aliases:
 Required: True
 Position: 2
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -192,6 +191,8 @@ To use Write-EventLog, start Windows PowerShell with the "Run as administrator" 
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135281)
+
 [Clear-EventLog](525ef611-6484-4088-887c-e084f3f5763b)
 
 [Get-EventLog](b4985b11-82bf-487d-928d-becd96fc0419)
@@ -207,4 +208,5 @@ To use Write-EventLog, start Windows PowerShell with the "Run as administrator" 
 [Show-EventLog](a3b0f5ad-0438-42c7-915b-d1b4793a431c)
 
 [Write-EventLog](c93c4cd3-028f-4343-bfe6-b70f8f249290)
+
 

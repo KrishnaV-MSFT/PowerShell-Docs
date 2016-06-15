@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113373
 schema: 2.0.0
 ---
 
@@ -33,7 +32,7 @@ Because it is supported by many providers, it can delete many different types of
 PS C:\>remove-item C:\Test\*.*
 ```
 
-This command deletes all of the files with names that include a dot (.) from the C:\Test directory.
+This command deletes all of the files with names that include a dot \(.\) from the C:\Test directory.
 Because the command specifies a dot, the command does not delete directories or files with no file name extension.
 
 ### -------------------------- EXAMPLE 2 --------------------------
@@ -42,7 +41,7 @@ PS C:\>remove-item * -include *.doc -exclude *1*
 ```
 
 This command deletes from the current directory all files with a .doc file name extension and a name that does not include "1".
-It uses the wildcard character (*) to specify the contents of the current directory.
+It uses the wildcard character \(*\) to specify the contents of the current directory.
 It uses the Include and Exclude parameters to specify the files to delete.
 
 ### -------------------------- EXAMPLE 3 --------------------------
@@ -62,7 +61,7 @@ PS C:\>get-childitem * -include *.csv -recurse | remove-item
 
 This command deletes all of the CSV files in the current directory and all subdirectories recursively.
 
-Because the Recurse parameter in the Remove-Item cmdlet has a known issue (it might not delete all child directories or files, especially if the Include parameter is added to the command), the command in this example uses the Get-ChildItem cmdlet to get the desired files, and then uses the pipeline operator to pass them to the Remove-Item cmdlet.
+Because the Recurse parameter in the Remove-Item cmdlet has a known issue \(it might not delete all child directories or files, especially if the Include parameter is added to the command\), the command in this example uses the Get-ChildItem cmdlet to get the desired files, and then uses the pipeline operator to pass them to the Remove-Item cmdlet.
 
 In the Get-ChildItem command, the Path parameter has a value of *, which represents the contents of the current directory.
 It uses the Include parameter to specify the CSV file type, and it uses the Recurse parameter to make the retrieval recursive.
@@ -76,7 +75,7 @@ PS C:\>remove-item hklm:\software\mycompany\OldApp -recurse
 
 This command deletes the OldApp registry key and all of its subkeys and values.
 It uses the Remove-Item cmdlet to remove the key.
-The path is specified, but the optional parameter name (Path) is omitted.
+The path is specified, but the optional parameter name \(Path\) is omitted.
 
 The Recurse parameter deletes all of the contents of the OldApp key recursively.
 If the key contains subkeys and you omit the Recurse parameter, you are prompted to confirm that you want to delete the contents of the key.
@@ -100,7 +99,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -118,7 +117,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -136,7 +135,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -155,7 +154,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -173,7 +172,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -192,14 +191,14 @@ Aliases: PSPath
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: true (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
 ### -Path
 Specifies a path to the items being removed.
 Wildcards are permitted.
-The parameter name ("-Path") is optional.
+The parameter name \("-Path"\) is optional.
 
 ```yaml
 Type: String[]
@@ -209,7 +208,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: true (ByValue, ByPropertyName)
 Accept wildcard characters: True
 ```
 
@@ -227,7 +226,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -241,8 +240,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -258,15 +257,15 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -UseTransaction
 Includes the command in the active transaction.
 This parameter is valid only when a transaction is in progress.
-For more information, see Includes the command in the active transaction.
+For more information, see Includes the command in the active transaction.
 This parameter is valid only when a transaction is in progress.
 For more information, see
 
@@ -277,15 +276,15 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ## INPUTS
 
 ### System.String
-You can pipe a string that contains a path (but not a literal path) to Remove-Item.
+You can pipe a string that contains a path \(but not a literal path\) to Remove-Item.
 
 ## OUTPUTS
 
@@ -301,6 +300,8 @@ To list the providers available in your session, type "Get-PsProvider".
 For more information, see about_Providers.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113373)
 
 [Clear-Item](e78220a3-d720-4347-bdbe-8f15f77f3aa1)
 
@@ -323,4 +324,5 @@ For more information, see about_Providers.
 [00000000-0000-0000-0000-000000000000](00000000-0000-0000-0000-000000000000)
 
 [about_Providers](55e2974f-3314-48d2-8b1b-abdea6b303cb)
+
 

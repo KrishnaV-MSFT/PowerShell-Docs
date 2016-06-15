@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=144302
 schema: 2.0.0
 ---
 
@@ -23,10 +22,10 @@ Export-FormatData [-Force] [-IncludeScriptBlock] [-NoClobber] -InputObject <Exte
 ```
 
 ## DESCRIPTION
-The Export-FormatData cmdlet creates Windows PowerShell formatting files (format.ps1xml) from the formatting objects in the current session.
+The Export-FormatData cmdlet creates Windows PowerShell formatting files \(format.ps1xml\) from the formatting objects in the current session.
 It takes the ExtendedTypeDefinition objects that Get-FormatData returns and saves them in a file in XML format.
 
-Windows PowerShell uses the data in formatting files (format.ps1xml) to generate the default display of Microsoft .NET Framework objects in the session.
+Windows PowerShell uses the data in formatting files \(format.ps1xml\) to generate the default display of Microsoft .NET Framework objects in the session.
 You can view and edit the formatting files and use the Update-FormatData cmdlet to add the formatting data to a session.
 
 For more information about formatting files in Windows PowerShell, see about_Format.ps1xml.
@@ -41,9 +40,9 @@ PS C:\>get-formatdata -typename * | export-formatdata -path allformat.ps1xml -In
 This command exports all of the format data in the session to the AllFormat.ps1xml file.
 
 The command uses the Get-FormatData cmdlet to get the format data in the session.
-A value of * (all) for the TypeName parameter directs the cmdlet to get all of the data in the session.
+A value of * \(all\) for the TypeName parameter directs the cmdlet to get all of the data in the session.
 
-The command uses a pipeline operator (|) to send the format data from the Get-FormatData command to the Export-FormatData cmdlet, which exports the format data to the AllFormat.ps1 file.
+The command uses a pipeline operator \(|\) to send the format data from the Get-FormatData command to the Export-FormatData cmdlet, which exports the format data to the AllFormat.ps1 file.
 
 The Export-FormatData command uses the IncludeScriptBlock parameter to include script blocks in the format data in the file.
 
@@ -76,7 +75,7 @@ Handles  NPM(K)  PM(K)  WS(K) VM(M)   CPU(s)    Id ProcessName
 This example shows the effect of omitting the IncludeScriptBlock parameter from an Export-FormatData command.
 
 The first command uses the Get-FormatData cmdlet to get the format data for the System.Diagnostics.Process object that the Get-Process cmdlet returns.
-The command uses a pipeline operator (|) to send the formatting data to the Export-FormatData cmdlet, which exports it to the Process.format.ps1xml file in the current directory.
+The command uses a pipeline operator \(|\) to send the formatting data to the Export-FormatData cmdlet, which exports it to the Process.format.ps1xml file in the current directory.
 
 In this case, the Export-FormatData command does not use the IncludeScriptBlock parameter.
 
@@ -100,7 +99,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -117,7 +116,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -134,7 +133,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -152,13 +151,13 @@ Aliases: NoOverwrite
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Path
 Specifies a location for the output file. 
-Enter a path (optional) and file name with a format.ps1xml file name extension.
+Enter a path \(optional\) and file name with a format.ps1xml file name extension.
 If you omit the path, Export-FormatData creates the file in the current directory.
 
 If you use a file name extension other than .ps1xml, the Update-FormatData cmdlet will not recognize the file.
@@ -175,7 +174,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -194,7 +193,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -215,7 +214,10 @@ For more information, see about_Execution_Policies.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=144302)
+
 [Get-FormatData](1644b550-d90b-4c96-9e6a-659bb924969d)
 
 [Update-FormatData](166535eb-9cdd-4269-b612-f936f6740b79)
+
 

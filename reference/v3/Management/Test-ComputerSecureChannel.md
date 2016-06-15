@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=137749
 schema: 2.0.0
 ---
 
@@ -81,7 +80,7 @@ The If statement checks the value that Test-ComputerSecureChannel returns before
 
 ### -Repair
 Removes and then rebuilds the secure channel established by the NetLogon service.
-Use this parameter to try to restore a connection that has failed the test (returned "False".)
+Use this parameter to try to restore a connection that has failed the test \(returned "False".\)
 
 To use this parameter, the current user must be a member of the Administrators group on the local computer.
 
@@ -93,7 +92,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -109,7 +108,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -128,7 +127,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -142,8 +141,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -159,8 +158,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -181,6 +180,8 @@ Test-ComputerSecureChannel is implemented by using the  I_NetLogonControl2 funct
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=137749)
+
 [Checkpoint-Computer](9ef7dd97-dbd9-43de-8988-9ab85e7827ad)
 
 [Reset-ComputerMachinePassword](0366abd4-dfad-45ad-b17c-299a2414bd7a)
@@ -188,4 +189,5 @@ Test-ComputerSecureChannel is implemented by using the  I_NetLogonControl2 funct
 [Restart-Computer](ba50f64c-866e-4315-91c7-0ce16b44c47e)
 
 [Stop-Computer](bae0484a-418a-432c-a172-34b5165dd0b1)
+
 

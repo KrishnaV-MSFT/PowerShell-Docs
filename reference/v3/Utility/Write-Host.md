@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113426
 schema: 2.0.0
 ---
 
@@ -38,7 +37,7 @@ PS C:\>write-host (2,4,6,8,10,12) -Separator ", +2= "
 ```
 
 This command displays the even numbers from 2 through 12.
-The Separator parameter is used to add the string , +2= (comma, space, +, 2, =, space).
+The Separator parameter is used to add the string , +2= \(comma, space, +, 2, =, space\).
 
 ### -------------------------- EXAMPLE 3 --------------------------
 ```
@@ -71,7 +70,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -87,7 +86,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -102,7 +101,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -117,7 +116,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -132,7 +131,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -152,6 +151,8 @@ However, the host might display the objects that Write-Host sends to it.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113426)
+
 [Clear-Host](http://go.microsoft.com/fwlink/?LinkID=225747)
 
 [Out-Host](00000000-0000-0000-0000-000000000000)
@@ -167,4 +168,5 @@ However, the host might display the objects that Write-Host sends to it.
 [Write-Verbose](d17c2519-dae0-4142-a506-9acfb79b72e7)
 
 [Write-Warning](8e53946e-1762-40e6-ab70-5307f6fc2a98)
+
 

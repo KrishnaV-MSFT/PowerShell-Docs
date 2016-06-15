@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Security.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113291
 schema: 2.0.0
 ---
 
@@ -90,7 +89,7 @@ After you enter the command, any characters that you type are converted into a s
 The second command uses the ConvertFrom-SecureString cmdlet to convert the secure string in the $secure variable into an encrypted standard string by using the specified key.
 The contents are saved in the $encrypted variable.
 
-The third command uses a pipeline operator (|) to send the value of the $encrypted variable to the Set-Content cmdlet, which saves the value in the Encrypted.txt file.
+The third command uses a pipeline operator \(|\) to send the value of the $encrypted variable to the Set-Content cmdlet, which saves the value in the Encrypted.txt file.
 
 The fourth command uses the Get-Content cmdlet to get the encrypted standard string in the Encrypted.txt file.
 The command uses a pipeline operator to send the encrypted string to the ConvertTo-SecureString cmdlet, which converts it to a secure string by using the specified key.
@@ -121,7 +120,7 @@ Aliases:
 Required: False
 Position: 2
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -136,7 +135,7 @@ Aliases:
 Required: False
 Position: 3
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -152,7 +151,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -170,7 +169,7 @@ Aliases:
 Required: False
 Position: 2
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -185,7 +184,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -203,7 +202,10 @@ ConvertTo-SecureString returns a SecureString object.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113291)
+
 [ConvertFrom-SecureString](82c65ee1-a382-4649-ac71-ad716211d53d)
 
 [Read-Host](00000000-0000-0000-0000-000000000000)
+
 

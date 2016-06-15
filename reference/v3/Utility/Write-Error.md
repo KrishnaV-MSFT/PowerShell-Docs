@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113425
 schema: 2.0.0
 ---
 
@@ -41,7 +40,7 @@ Non-terminating errors write an error to the error stream, but they do not stop 
 If a non-terminating error is declared on one item in a collection of input items, the command continues to process the other items in the collection.
 
 To declare a terminating error, use the Throw keyword.
-For more information, see about_Throw (http://go.microsoft.com/fwlink/?LinkID=145153).
+For more information, see about_Throw \(http://go.microsoft.com/fwlink/?LinkID=145153\).
 
 ## EXAMPLES
 
@@ -88,7 +87,7 @@ The value of the Exception parameter is the Exception object in the $e variable.
 Specifies the category of the error.
 The default value is NotSpecified.
 
-For information about the error categories, see "ErrorCategory Enumeration" in the MSDN (Microsoft Developer Network) library at http://go.microsoft.com/fwlink/?LinkId=143600.
+For information about the error categories, see "ErrorCategory Enumeration" in the MSDN \(Microsoft Developer Network\) library at http://go.microsoft.com/fwlink/?LinkId=143600.
 
 ```yaml
 Type: ErrorCategory
@@ -98,7 +97,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: NotSpecified
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -113,7 +112,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -128,7 +127,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -143,7 +142,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -158,7 +157,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -174,7 +173,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -192,7 +191,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -210,7 +209,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -227,7 +226,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -239,7 +238,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -254,13 +253,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -TargetObject
 Specifies the object that was being processed when the error occurred.
-Enter the object (such as a string), a variable that contains the object, or a command that gets the object.
+Enter the object \(such as a string\), a variable that contains the object, or a command that gets the object.
 
 ```yaml
 Type: Object
@@ -270,7 +269,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -289,6 +288,8 @@ It does not return any objects.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113425)
+
 [Write-Debug](fb95cfe7-8a21-4b6a-9e00-0205a6b74c41)
 
 [Write-Host](023e670a-cfda-4e8c-af8f-c2b2d9ee5612)
@@ -300,4 +301,5 @@ It does not return any objects.
 [Write-Verbose](d17c2519-dae0-4142-a506-9acfb79b72e7)
 
 [Write-Warning](8e53946e-1762-40e6-ab70-5307f6fc2a98)
+
 

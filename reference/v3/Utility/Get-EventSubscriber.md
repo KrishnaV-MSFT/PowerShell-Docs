@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135155
 schema: 2.0.0
 ---
 
@@ -108,7 +107,7 @@ PS C:\>& $subscriber.action.module {$random}
 This example shows how to use the dynamic module in the PSEventJob object in the Action property of the event subscriber.
 
 The first command uses the New-Object cmdlet to create a timer object.
-The second command sets the interval of the timer to 500 (milliseconds).
+The second command sets the interval of the timer to 500 \(milliseconds\).
 
 The third command uses the Register-ObjectEvent cmdlet to register the Elapsed event of the timer object.
 The command includes an action that handles the event.
@@ -129,7 +128,7 @@ In fact, it contains the same PSEventJob object that the Register-ObjectEvent co
 The seventh command uses the Format-List cmdlet to display all of the properties of the PSEventJob object in the Action property in a list.
 The result reveal that the PSEventJob object has a Module property that contains a dynamic script module that implements the action.
 
-The remaining commands use the call operator (&) to invoke the command in the module and display the value of the $random variable.
+The remaining commands use the call operator \(&\) to invoke the command in the module and display the value of the $random variable.
 You can use the call operator to invoke any command in a module, including commands that are not exported.
 In this case, the commands show the random number that is being generated when the Elapsed event occurs.
 
@@ -148,7 +147,7 @@ Aliases:
 Required: False
 Position: 2
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -166,7 +165,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: All event subscribers
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -182,7 +181,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: All event subscribers
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -199,12 +198,14 @@ Get-EventSubscriber returns an object that represents each event subscriber.
 ## NOTES
 The New-Event cmdlet, which creates a custom event, does not generate a subscriber.
 Therefore, the Get-EventSubscriber cmdlet will not find a subscriber object for these events.
-However, if you use the Register-EngineEvent cmdlet to subscribe to a custom event (in order to forward the event or to specify an action), Get-EventSubscriber will find the subscriber that Register-EngineEvent generates.
+However, if you use the Register-EngineEvent cmdlet to subscribe to a custom event \(in order to forward the event or to specify an action\), Get-EventSubscriber will find the subscriber that Register-EngineEvent generates.
 
 Events, event subscriptions, and the event queue exist only in the current session.
 If you close the current session, the event queue is discarded and the event subscription is canceled.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135155)
 
 [Get-Event](4ac85bbe-2abd-4e86-a313-edae6a08e435)
 
@@ -221,4 +222,5 @@ If you close the current session, the event queue is discarded and the event sub
 [Unregister-Event](313e8361-8646-4b0d-b72f-f76987c49591)
 
 [Wait-Event](bd2e7d77-2642-4628-b937-0a7d52033399)
+
 

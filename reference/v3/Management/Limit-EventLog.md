@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135227
 schema: 2.0.0
 ---
 
@@ -19,7 +18,7 @@ Limit-EventLog [-LogName] <String[]> [-ComputerName <String[]>] [-MaximumSize <I
 The Limit-EventLog cmdlet sets the maximum size of a classic event log, how long each event must be retained, and what happens when the log reaches its maximum size.
 You can use it to limit the event logs on local or remote computers.
 
-The cmdlets that contain the EventLog noun (the EventLog cmdlets) work only on classic event logs.
+The cmdlets that contain the EventLog noun \(the EventLog cmdlets\) work only on classic event logs.
 To get events from logs that use the Windows Event Log technology in Windows Vista and later versions of Windows, use Get-WinEvent.
 
 ## EXAMPLES
@@ -29,7 +28,7 @@ To get events from logs that use the Windows Event Log technology in Windows Vis
 PS C:\>limit-eventLog -logname "Windows PowerShell" -MaximumSize 20KB
 ```
 
-This command increases the maximum size of the Windows PowerShell event log on the local computer to 20480 kilobytes (KB) (20 KB).
+This command increases the maximum size of the Windows PowerShell event log on the local computer to 20480 kilobytes \(KB\) \(20 KB\).
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```
@@ -70,8 +69,8 @@ The third command displays the results.
 Specifies a remote computer.
 The default is the local computer.
 
-Type the NetBIOS name, an Internet Protocol (IP) address, or a fully qualified domain name of a remote computer.
-To specify the local computer, type the computer name, a dot (.), or "localhost".
+Type the NetBIOS name, an Internet Protocol \(IP\) address, or a fully qualified domain name of a remote computer.
+To specify the local computer, type the computer name, a dot \(.\), or "localhost".
 
 This parameter does not rely on Windows PowerShell remoting.
 You can use the ComputerName parameter of Limit-EventLog even if your computer is not configured to run remote commands.
@@ -84,13 +83,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: Local computer
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -LogName
 Specifies the event logs.
-Enter the log name (the value of the Log property; not the LogDisplayName) of one or more event logs , separated by commas. 
+Enter the log name \(the value of the Log property; not the LogDisplayName\) of one or more event logs , separated by commas. 
 Wildcard characters are not permitted.
 This parameter is required.
 
@@ -102,14 +101,14 @@ Aliases:
 Required: True
 Position: 1
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
 ### -MaximumSize
 Specifies the maximum size of the event logs in bytes.
-Enter a value between 64 kilobytes (KB) and 4 gigabytes (GB).
-The value must be divisible by 64 KB (65536).
+Enter a value between 64 kilobytes \(KB\) and 4 gigabytes \(GB\).
+The value must be divisible by 64 KB \(65536\).
 
 This parameter specifies the value of the MaximumKilobytes property of the System.Diagnostics.EventLog object that represents a classic event log.
 
@@ -121,7 +120,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -144,7 +143,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -161,7 +160,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -175,8 +174,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -192,8 +191,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -215,6 +214,8 @@ To see the current settings of the event log properties, type "get-eventlog -lis
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135227)
+
 [Clear-EventLog](525ef611-6484-4088-887c-e084f3f5763b)
 
 [Get-EventLog](b4985b11-82bf-487d-928d-becd96fc0419)
@@ -230,4 +231,5 @@ To see the current settings of the event log properties, type "get-eventlog -lis
 [Show-EventLog](a3b0f5ad-0438-42c7-915b-d1b4793a431c)
 
 [Write-EventLog](c93c4cd3-028f-4343-bfe6-b70f8f249290)
+
 

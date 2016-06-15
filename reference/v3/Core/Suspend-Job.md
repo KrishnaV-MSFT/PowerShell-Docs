@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Core.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=210613
 schema: 2.0.0
 ---
 
@@ -41,7 +40,7 @@ Suspend-Job [-Name] <String[]> [-Force] [-Wait] [-Confirm] [-WhatIf]
 ```
 
 ## DESCRIPTION
-The Suspend-Job cmdlet suspends (temporarily interrupts or pauses) workflow jobs.
+The Suspend-Job cmdlet suspends \(temporarily interrupts or pauses\) workflow jobs.
 This cmdlet allows users who are running workflows to suspend the workflow.
 It complements the Suspend-Workflowhttp://go.microsoft.com/fwlink/?LinkId=267141 activity, which is a command in the workflow that suspends the workflow.
 
@@ -61,7 +60,7 @@ If the workflow job does not have checkpoints, it cannot be suspended properly.
 To add checkpoints to a workflow that you are running, use the PSPersist workflow common parameter.
 You can use the Force parameter to suspend any workflow job immediately and to suspend a workflow job that does not have checkpoints, but the action might cause loss of state and data.
 
-NOTE: Before using a Job cmdlet on a custom job type, such as a workflow job (PSWorkflowJob) import the module that supports the custom job type, either by using the Import-Module cmdlet or using or using a cmdlet in the module.
+NOTE: Before using a Job cmdlet on a custom job type, such as a workflow job \(PSWorkflowJob\) import the module that supports the custom job type, either by using the Import-Module cmdlet or using or using a cmdlet in the module.
 
 This cmdlet is introduced in Windows PowerShell 3.0.
 
@@ -126,7 +125,7 @@ PS C:\>Invoke-Command -ComputerName Srv01 -Scriptblock {Suspend-Job -Filter @{Cu
 
 This command uses the Invoke-Command cmdlet to suspend a workflow job on the Srv01 remote computer.
 The value of the Filters parameter is a hash table that specifies a CustomID value.
-This CustomID is job metadata (PSPrivateMetadata).
+This CustomID is job metadata \(PSPrivateMetadata\).
 
 ### Example 4: Wait for the workflow job to suspend
 ```
@@ -181,7 +180,7 @@ Aliases: F
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -190,7 +189,7 @@ Suspends the workflow jobs with the specified IDs.
 
 The ID is an integer that uniquely identifies the job within the current session.
 It is easier to remember and to type than the instance ID, but it is unique only within the current session.
-You can type one or more IDs (separated by commas).
+You can type one or more IDs \(separated by commas\).
 To find the ID of a job, use the Get-Job cmdlet.
 
 ```yaml
@@ -262,7 +261,7 @@ Accept wildcard characters: False
 Suspends only those workflow jobs in the specified state.
 Valid values are NotStarted, Running, Completed, Failed, Stopped, Blocked, Suspended, Disconnected, Suspending, Stopping but Suspend-Job suspends only workflow jobs in the Running state.
 
-For more information about job states, see "JobState Enumeration" in MSDN at http://msdn.microsoft.com/library/windows/desktop/system.management.automation.jobstate(v=vs.85).aspxhttp://msdn.microsoft.com/library/windows/desktop/system.management.automation.jobstate(v=vs.85).aspx
+For more information about job states, see "JobState Enumeration" in MSDN at http://msdn.microsoft.com/library/windows/desktop/system.management.automation.jobstate\(v=vs.85\).aspxhttp://msdn.microsoft.com/library/windows/desktop/system.management.automation.jobstate\(v=vs.85\).aspx
 
 ```yaml
 Type: JobState
@@ -290,7 +289,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -304,8 +303,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -321,8 +320,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -353,6 +352,8 @@ If attempts to suspend the job fail, verify that the job options and properties 
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=210613)
+
 [Get-Job](1352c534-7193-46ca-9ab1-0c5219a661ad)
 
 [Receive-Job](78fcc10b-5cde-4bf2-a901-33f8237f87fe)
@@ -368,4 +369,5 @@ If attempts to suspend the job fail, verify that the job options and properties 
 [Suspend-Job](3496f930-2c84-4a90-9c65-ad562f0dc4cf)
 
 [Wait-Job](cb8a2c67-f8a5-45a8-a27f-2ec028c9da8f)
+
 

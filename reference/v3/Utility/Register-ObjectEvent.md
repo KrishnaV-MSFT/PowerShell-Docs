@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135244
 schema: 2.0.0
 ---
 
@@ -128,7 +127,7 @@ PS C:\>& $job.module {$random}
 This example shows how to use the dynamic module in the PSEventJob object that is created when you include an Action in a event registration.
 
 The first command uses the New-Object cmdlet to create a timer object.
-The second command sets the interval of the timer to 500 (milliseconds).
+The second command sets the interval of the timer to 500 \(milliseconds\).
 
 The third command uses the Register-ObjectEvent cmdlet to register the Elapsed event of the timer object.
 The command includes an action that handles the event.
@@ -148,7 +147,7 @@ The PSEventJob has a Module property that contains a dynamic script module that 
 
 The sixth command enables the timer.
 
-The remaining commands use the call operator (&) to invoke the command in the module and display the value of the $random variable.
+The remaining commands use the call operator \(&\) to invoke the command in the module and display the value of the $random variable.
 You can use the call operator to invoke any command in a module, including commands that are not exported.
 In this case, the commands show the random number that is being generated when the Elapsed event occurs.
 
@@ -159,7 +158,7 @@ For more information about modules, see about_Modules.
 ### -Action
 Specifies commands to handle the events.
 The commands in the Action run when an event is raised, instead of sending the event to the event queue.
-Enclose the commands in braces ( { } ) to create a script block.
+Enclose the commands in braces \( { } \) to create a script block.
 
 The value of the Action parameter can include the $Event, $EventSubscriber, $Sender, $EventArgs, and $Args automatic variables, which provide information about the event to the Action script block.
 For more information, see about_Automatic_Variables.
@@ -175,7 +174,7 @@ Aliases:
 Required: False
 Position: 102
 Default value: None.
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -196,7 +195,7 @@ Aliases:
 Required: True
 Position: 2
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -212,7 +211,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -229,7 +228,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -245,7 +244,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -264,7 +263,7 @@ Aliases:
 Required: False
 Position: 101
 Default value: GUID
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -282,13 +281,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -MaxTriggerCount
 Specifies the maximum number of times that an event is raised before users who are registered as event subscribers are automatically unsubscribed.
-The default value, zero (0), means that there is no maximum.
+The default value, zero \(0\), means that there is no maximum.
 Users are not automatically unsubscribed, regardless of the number of times the event is raised.
 
 ```yaml
@@ -299,7 +298,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -319,6 +318,8 @@ If you close the current session, the event queue is discarded and the event sub
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135244)
+
 [Get-Event](4ac85bbe-2abd-4e86-a313-edae6a08e435)
 
 [New-Event](d5f16c15-8a98-4221-8f96-0867578f5430)
@@ -332,4 +333,5 @@ If you close the current session, the event queue is discarded and the event sub
 [Unregister-Event](313e8361-8646-4b0d-b72f-f76987c49591)
 
 [Wait-Event](bd2e7d77-2642-4628-b937-0a7d52033399)
+
 

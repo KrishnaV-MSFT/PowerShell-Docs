@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135261
 schema: 2.0.0
 ---
 
@@ -112,7 +111,7 @@ This is the same as starting Windows PowerShell with the "Run as administrator" 
 
 ### -ArgumentList
 Specifies parameters or parameter values to use when starting the process. 
-The parameter name ("ArgumentList") is optional.
+The parameter name \("ArgumentList"\) is optional.
 
 ```yaml
 Type: String[]
@@ -122,7 +121,7 @@ Aliases:
 Required: False
 Position: 2
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -139,12 +138,12 @@ Aliases:
 Required: False
 Position: Named
 Default value: Current user.
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -FilePath
-Specifies the path (optional) and file name of the program that runs in the process.
+Specifies the path \(optional\) and file name of the program that runs in the process.
 Enter the name of an executable file or of a document, such as a .txt or .doc file, that is associated with a program on the computer.
 This parameter is required.
 
@@ -158,7 +157,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -167,7 +166,7 @@ Loads the Windows user profile stored in the HKEY_USERS registry key for the cur
 The default value is FALSE.
 
 This parameter does not affect the Windows PowerShell profiles.
-(See about_Profiles.)
+\(See about_Profiles.\)
 
 ```yaml
 Type: SwitchParameter
@@ -177,7 +176,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -195,7 +194,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -211,7 +210,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -228,7 +227,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Errors are displayed in the console
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -245,7 +244,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Keyboard
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -262,7 +261,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: FALSE
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -278,7 +277,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -307,7 +306,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -323,7 +322,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -342,7 +341,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Normal
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -358,7 +357,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Current directory
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -375,9 +374,11 @@ Otherwise, this cmdlet does not return any output.
 
 ## NOTES
 This cmdlet is implemented by using the Start method of the System.Diagnostics,Process class.
-For more information about this method, see "Process.Start Method" in the MSDN (Microsoft Developer Network) library at http://go.microsoft.com/fwlink/?LinkId=143602.
+For more information about this method, see "Process.Start Method" in the MSDN \(Microsoft Developer Network\) library at http://go.microsoft.com/fwlink/?LinkId=143602.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135261)
 
 [Debug-Process](ba768230-a5ed-4b80-8e1f-3cba8413aa78)
 
@@ -388,4 +389,5 @@ For more information about this method, see "Process.Start Method" in the MSDN (
 [Stop-Process](3864dc3d-34ec-4ebd-8132-776346c00871)
 
 [Wait-Process](861eb7b3-a18e-4445-9a69-2c65c420866f)
+
 

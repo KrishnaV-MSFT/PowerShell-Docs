@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Security.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113391
 schema: 2.0.0
 ---
 
@@ -23,7 +22,7 @@ Set-AuthenticodeSignature [-Certificate] <X509Certificate2> [-Force] [-HashAlgor
 ```
 
 ## DESCRIPTION
-The Set-AuthenticodeSignature cmdlet adds an Authenticode signature to any file that supports Subject Interface Package (SIP).
+The Set-AuthenticodeSignature cmdlet adds an Authenticode signature to any file that supports Subject Interface Package \(SIP\).
 
 In a Windows PowerShell script file, the signature takes the form of a block of text that indicates the end of the instructions that are executed in the script.
 If there is a signature in the file when this cmdlet runs, that signature is removed.
@@ -39,7 +38,7 @@ PS C:\>Set-AuthenticodeSignature -FilePath PsTestInternet2.ps1 -certificate $cer
 These commands retrieve a code-signing certificate from the Windows PowerShell certificate provider and use it to sign a Windows PowerShell script.
 
 The first command uses the Get-ChildItem cmdlet and the Windows PowerShell certificate provider to get the certificates in the Cert:\CurrentUser\My subdirectory of the certificate store.
-(The Cert: drive is the drive exposed by the certificate provider.) The CodeSigningCert parameter, which is supported only by the certificate provider, limits the certificates retrieved to those with code-signing authority.
+\(The Cert: drive is the drive exposed by the certificate provider.\) The CodeSigningCert parameter, which is supported only by the certificate provider, limits the certificates retrieved to those with code-signing authority.
 The command stores the result in the $cert variable.
 
 The second command uses the Set-AuthenticodeSignature cmdlet to sign the PSTestInternet2.ps1 script.
@@ -69,7 +68,7 @@ PS C:\>Set-AuthenticodeSignature -filepath c:\scripts\Remodel.ps1 -certificate $
 This command adds a digital signature that includes the root authority in the trust chain, and it is signed by a third-party timestamp server.
 
 The command uses the FilePath parameter to specify the script being signed and the Certificate parameter to specify the certificate that is saved in the $cert variable.
-It uses the IncludeChain parameter to include all of the signatures in the trust chain (including the root authority).
+It uses the IncludeChain parameter to include all of the signatures in the trust chain \(including the root authority\).
 It also uses the TimeStampServer parameter to add a timestamp to the signature.
 This prevents the script from failing when the certificate expires.
 
@@ -79,7 +78,7 @@ This prevents the script from failing when the certificate expires.
 Specifies the certificate that will be used to sign the script or file.
 Enter a variable that stores an object representing the certificate or an expression that gets the certificate.
 
-To find a certificate, use Get-PfxCertificate or use the Get-ChildItem cmdlet in the Certificate (Cert:) drive.
+To find a certificate, use Get-PfxCertificate or use the Get-ChildItem cmdlet in the Certificate \(Cert:\) drive.
 If the certificate is not valid or does not have code-signing authority, the command fails.
 
 ```yaml
@@ -90,7 +89,7 @@ Aliases:
 Required: True
 Position: 2
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -105,7 +104,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: true (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -121,7 +120,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -140,7 +139,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: SHA256
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -162,7 +161,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: NotRoot
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -181,7 +180,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -200,7 +199,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -214,8 +213,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -231,8 +230,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -249,6 +248,8 @@ You can pipe a string that contains the file path to Set-AuthenticodeSignature.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113391)
+
 [Get-AuthenticodeSignature](36e5e640-2125-476e-98d9-495977315f14)
 
 [Get-ExecutionPolicy](f9f34cdc-63fb-47fc-adf7-6dcdafcc7431)
@@ -260,4 +261,5 @@ You can pipe a string that contains the file path to Set-AuthenticodeSignature.
 [about_Execution_Policies](2e8d33b9-6c07-4a15-a486-9388d10eb00f)
 
 [about_Signing](054e64fa-3571-40fd-a862-630b5217b4f4)
+
 

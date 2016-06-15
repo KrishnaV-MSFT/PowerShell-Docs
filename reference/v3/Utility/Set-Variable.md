@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113401
 schema: 2.0.0
 ---
 
@@ -39,10 +38,10 @@ PS C:\>set-variable -name processes -value (Get-Process) -option constant -scope
 This command creates a global, read-only variable that contains all processes on the system, and then it displays all properties of the variable.
 
 The command uses the Set-Variable cmdlet to create the variable.
-It uses the PassThru parameter to create an object representing the new variable, and it uses the pipeline operator (|) to pass the object to the Format-List cmdlet.
-It uses the Property parameter of Format-List with a value of all (*) to display all properties of the newly created variable.
+It uses the PassThru parameter to create an object representing the new variable, and it uses the pipeline operator \(|\) to pass the object to the Format-List cmdlet.
+It uses the Property parameter of Format-List with a value of all \(*\) to display all properties of the newly created variable.
 
-The value, "(Get-Process)", is enclosed in parentheses to ensure that it is executed before being stored in the variable.
+The value, "\(Get-Process\)", is enclosed in parentheses to ensure that it is executed before being stored in the variable.
 Otherwise, the variable contains the words "Get-Process".
 
 ### -------------------------- EXAMPLE 3 --------------------------
@@ -96,7 +95,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -114,7 +113,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -132,7 +131,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -150,7 +149,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -165,7 +164,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -174,7 +173,7 @@ Sets the value of the Options property of the variable.
 
 Valid values are:
 
--- None: Sets no options. ("None" is the default.)
+-- None: Sets no options. \("None" is the default.\)
 -- ReadOnly: Can be deleted. Cannot be not changed, except by using the Force parameter.
 -- Constant: Cannot be deleted or changed.  "Constant" is valid only when you are creating a variable. You cannot change the options of an existing variable to "Constant".
 -- Private: The variable is available only in the current scope.
@@ -190,7 +189,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: "None"
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -206,13 +205,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: No output
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Scope
 Determines the scope of the variable.
-Valid values are "Global", "Local", or "Script", or a number relative to the current scope (0 through the number of scopes, where 0 is the current scope and 1 is its parent).
+Valid values are "Global", "Local", or "Script", or a number relative to the current scope \(0 through the number of scopes, where 0 is the current scope and 1 is its parent\).
 "Local" is the default.
 For more information, see about_Scopes.
 
@@ -224,7 +223,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Local
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -239,7 +238,7 @@ Aliases:
 Required: False
 Position: 2
 Default value: 
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: true (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -249,7 +248,7 @@ This parameter is designed for  use in scripts and commands that will be deliver
 
 Valid values are:
 
--- Public:  The variable is visible. ("Public" is the default.)
+-- Public:  The variable is visible. \("Public" is the default.\)
 -- Private: The variable is not visible.
 
 When a variable is private, it does not appear in lists of variables, such as those returned by Get-Variable, or in displays of the Variable: drive.
@@ -264,7 +263,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Public
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -278,8 +277,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -295,8 +294,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -315,6 +314,8 @@ Otherwise, this cmdlet does not generate any output.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113401)
+
 [Clear-Variable](e8e9af2f-e5c9-4ab8-8518-b305b1c4494a)
 
 [Get-Variable](385002f8-2406-42f9-843b-9cb16aec927f)
@@ -322,4 +323,5 @@ Otherwise, this cmdlet does not generate any output.
 [New-Variable](5c7c621f-c086-4286-8f9b-86cadecb8c0b)
 
 [Remove-Variable](a58fb01b-6bb4-48e9-a07c-5ad907dc4791)
+
 

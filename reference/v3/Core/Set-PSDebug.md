@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Core.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113398
 schema: 2.0.0
 ---
 
@@ -99,7 +98,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -117,7 +116,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -135,7 +134,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -156,7 +155,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -174,6 +173,8 @@ This cmdlet does not return any output.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113398)
+
 [Debug-Process](00000000-0000-0000-0000-000000000000)
 
 [Set-PSBreakpoint](00000000-0000-0000-0000-000000000000)
@@ -183,4 +184,5 @@ This cmdlet does not return any output.
 [Write-Debug](00000000-0000-0000-0000-000000000000)
 
 [about_Debuggers]()
+
 

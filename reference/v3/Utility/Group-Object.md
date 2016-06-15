@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113338
 schema: 2.0.0
 ---
 
@@ -61,9 +60,9 @@ Count Name                      Group
 
 These commands display the 1,000 most recent entries in the System event log, grouped by Event ID.
 
-The first command uses the Get-EventLog cmdlet to retrieve the events and the assignment operator (=) to save them in the $events variable.
+The first command uses the Get-EventLog cmdlet to retrieve the events and the assignment operator \(=\) to save them in the $events variable.
 
-The second command uses a pipeline operator (|) to send the events in the $events variable to the Group-Object cmdlet.
+The second command uses a pipeline operator \(|\) to send the events in the $events variable to the Group-Object cmdlet.
 The command uses the Property parameter to specify that the events should be grouped according to the value of their EventID property.
 
 In the output, the Count column represents the number of entries in each group, the Name column represents the EventID values that define a group, and the Group column represents the objects in each group.
@@ -93,7 +92,7 @@ This example demonstrates the effect of the NoElement parameter.
 These commands group the processes on the computer by priority class.
 
 The first command uses the Get-Process cmdlet to get the processes on the computer.
-It uses a pipeline operator (|) to send the results to Group-Object, which groups the objects by the value of the PriorityClass property of the process.
+It uses a pipeline operator \(|\) to send the results to Group-Object, which groups the objects by the value of the PriorityClass property of the process.
 
 The second command is identical to the first, except that it uses the NoElement parameter to eliminate the members of the group from the output.
 The result is a table with only the count and property value name.
@@ -110,8 +109,8 @@ This command demonstrates how to provide the value of the Property parameter as 
 This command displays the most recent 1,000 entries from the system event log, grouped according to the time between when they were generated and when they were written to the log.
 
 The command uses the Get-EventLog cmdlet to get the event log entries.
-It uses a pipeline operator (|) to send the entries to the Group-Object cmdlet.
-The value of the Property parameter is specified as a script block (an expression in braces).
+It uses a pipeline operator \(|\) to send the entries to the Group-Object cmdlet.
+The value of the Property parameter is specified as a script block \(an expression in braces\).
 The result of evaluating the script block is the time between when the log entry was generated and when it was written to the log.
 That value is used to group the 1,000 most recent events.
 
@@ -164,7 +163,7 @@ Count Name
 2 wmiprvse
 ```
 
-This example shows how to find the unique and non-unique (repeated) property values in a collection.
+This example shows how to find the unique and non-unique \(repeated\) property values in a collection.
 
 The first command gets the unique elements of an array by piping the array to the Get-Unique cmdlet.
 
@@ -229,7 +228,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: GroupInfo object
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -246,7 +245,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: GroupInfo objects
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -262,7 +261,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -277,7 +276,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -298,7 +297,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -313,7 +312,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -332,7 +331,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -348,7 +347,7 @@ When you use the AsHashTable parameter, Group-Object returns a hash table.
 Otherwise, it returns a GroupInfo object.
 
 ## NOTES
-You can also use the GroupBy parameter of the formatting cmdlets (such as Format-Table \[m2\] and Format-List \[m2\]) to group objects.
+You can also use the GroupBy parameter of the formatting cmdlets \(such as Format-Table \[m2\] and Format-List \[m2\]\) to group objects.
 Unlike Group-Object, which creates a single table with a row for each property value, the GroupBy parameters create a table for each property value with a row for each item that has the property value.
 
 Group-Object does not require that the objects being grouped be of the same Microsoft .NET Framework type.
@@ -359,4 +358,7 @@ When grouping objects of different .NET Framework types, Group-Object uses the f
 -- Missing Properties: Objects that do not have a specified property are considered ungroupable. Ungroupable objects appear in the final GroupInfo object output in a group named AutomationNull.Value.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113338)
+
 

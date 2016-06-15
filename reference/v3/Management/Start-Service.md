@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113406
 schema: 2.0.0
 ---
 
@@ -55,7 +54,7 @@ PS C:\>$s = get-service wmi
 PS C:\>start-service -InputObject $s -passthru | format-list >> services.txt
 ```
 
-These commands start the Windows Management Instrumentation (WMI) service on the computer and add a record of the action to the services.txt file.
+These commands start the Windows Management Instrumentation \(WMI\) service on the computer and add a record of the action to the services.txt file.
 The first command uses the Get-Service cmdlet to get an object representing the WMI service and store it in the $s variable.
 
 The second command uses the Start-Service cmdlet to start the WMI service.
@@ -63,8 +62,8 @@ It identifies the service by using the InputObject parameter to pass the $s vari
 Then, it uses the PassThru parameter to create an object that represents the starting of the service.
 Without this parameter, Start-Service does not create any output.
 
-The pipeline operator (|) passes the object that Start-Service creates to the Format-List cmdlet, which formats the object as a list of its properties.
-The append redirection operator (\>\>) redirects the output to the services.txt file, where it is added to the end of the existing file.
+The pipeline operator \(|\) passes the object that Start-Service creates to the Format-List cmdlet, which formats the object as a list of its properties.
+The append redirection operator \(\>\>\) redirects the output to the services.txt file, where it is added to the end of the existing file.
 
 ### -------------------------- EXAMPLE 4 --------------------------
 ```
@@ -82,7 +81,7 @@ Status    : OK PS C:\>set-service tlntsvr -startuptype manual PS C:\>start-servi
 ```
 
 This series of commands shows how to start a service when the start type of the service is "Disabled".
-The first command, which uses the Start-Service cmdlet to start the Telnet service (tlntsvr), fails.
+The first command, which uses the Start-Service cmdlet to start the Telnet service \(tlntsvr\), fails.
 
 The second command uses the Get-WmiObject cmdlet to get the Tlntsvr service.
 This command retrieves an object with the start type property in the StartMode field.
@@ -109,7 +108,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -127,7 +126,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -145,7 +144,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -161,7 +160,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -179,7 +178,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: true (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
@@ -195,7 +194,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -224,10 +223,12 @@ You can start only the services that have a start type of "Manual" or "Automatic
 You cannot start the services with a start type of "Disabled".
 If a Start-Service command fails with the message "Cannot start service \<service-name\> on computer," use a Get-WmiObject command to find the start type of the service and, if necessary, use a Set-Service command to change the start type of the service.
 
-Some services, such as Performance Logs and Alerts (SysmonLog) stop automatically if they have no work to do.
+Some services, such as Performance Logs and Alerts \(SysmonLog\) stop automatically if they have no work to do.
 When Windows PowerShell starts a service that stops itself almost immediately, it displays the following message: "Service \<display-name\> start failed."
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113406)
 
 [Get-Service](77f3c94b-6ffd-4906-8216-3debbf5ffe79)
 
@@ -242,4 +243,5 @@ When Windows PowerShell starts a service that stops itself almost immediately, i
 [Stop-Service](58033475-759b-42e4-9395-c077aa55934e)
 
 [Suspend-Service](5b8bd69a-0a18-4478-b257-d442ddef417c)
+
 

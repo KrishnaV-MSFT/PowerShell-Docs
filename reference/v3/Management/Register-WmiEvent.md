@@ -1,12 +1,11 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135245
 schema: 2.0.0
 ---
 
 # Register-WmiEvent
 ## SYNOPSIS
-Subscribes to a Windows Management Instrumentation (WMI) event.
+Subscribes to a Windows Management Instrumentation \(WMI\) event.
 
 ## SYNTAX
 
@@ -38,7 +37,7 @@ To get the event subscribers in the session, use the Get-EventSubscriber cmdlet.
 To cancel the subscription, use the Unregister-Event cmdlet, which deletes the event subscriber from the session.
 
 New CIM cmdlets, introduced Windows PowerShell 3.0, perform the same tasks as the WMI cmdlets.
-The CIM cmdlets comply with WS-Management (WSMan) standards and with the Common Information Model (CIM) standard, which enables the cmdlets to use the same techniques to manage Windows computers and those running other operating systems.
+The CIM cmdlets comply with WS-Management \(WSMan\) standards and with the Common Information Model \(CIM\) standard, which enables the cmdlets to use the same techniques to manage Windows computers and those running other operating systems.
 Instead of using Register-WmiEvent, consider using the Register-CimIndicationEventhttp://go.microsoft.com/fwlink/?LinkId=227960 cmdlet.
 
 ## EXAMPLES
@@ -92,13 +91,13 @@ To retrieve the events, run a local Get-Event command.
 ### -Action
 Specifies commands that handle the events.
 The commands in the Action parameter run when an event is raised instead of sending the event to the event queue.
-Enclose the commands in braces ( { } ) to create a script block.
+Enclose the commands in braces \( { } \) to create a script block.
 
 The value of the Action parameter can include the $Event, $EventSubscriber, $Sender, $EventArgs, and $Args automatic variables, which provide information about the event to the Action script block.
 For more information, see about_Automatic_Variables.
 
 When you specify an action, Register-WmiEvent returns an event job object that represents that action.
-You can use the cmdlets that contain the Job noun (the Job cmdlets) to manage the event job.
+You can use the cmdlets that contain the Job noun \(the Job cmdlets\) to manage the event job.
 
 ```yaml
 Type: ScriptBlock
@@ -108,7 +107,7 @@ Aliases:
 Required: False
 Position: 102
 Default value: The event is added to the event queue.
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -125,7 +124,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -134,7 +133,7 @@ Runs the command on the specified computer.
 The default is the local computer.
 
 Type the NetBIOS name, an IP address, or a fully qualified domain name of the computer.
-To specify the local computer, type the computer name, a dot (.), or "localhost".
+To specify the local computer, type the computer name, a dot \(.\), or "localhost".
 
 This parameter does not rely on Windows PowerShell remoting.
 You can use the ComputerName parameter even if your computer is not configured to run remote commands.
@@ -147,7 +146,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Local computer
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -165,7 +164,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: The credentials of the current user
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -181,13 +180,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -MaxTriggerCount
 Specifies the maximum number of times that an event is raised before users who are registered as event subscribers are automatically unsubscribed.
-The default value, zero (0), means that there is no maximum.
+The default value, zero \(0\), means that there is no maximum.
 Users are not automatically unsubscribed, regardless of the number of times the event is raised.
 
 ```yaml
@@ -198,7 +197,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -214,7 +213,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None. The MessageData property is NULL.
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -229,12 +228,12 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Query
-Specifies a query in WMI Query Language (WQL) that identifies the WMI event class, such as "select * from __InstanceDeletionEvent".
+Specifies a query in WMI Query Language \(WQL\) that identifies the WMI event class, such as "select * from __InstanceDeletionEvent".
 
 ```yaml
 Type: String
@@ -244,7 +243,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -263,7 +262,7 @@ Aliases:
 Required: False
 Position: 101
 Default value: GUID
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -281,14 +280,14 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Timeout
 Determines how long Windows PowerShell waits for this command to complete.
 
-The default value, 0 (zero), means that there is no time-out, and it causes Windows PowerShell to wait indefinitely.
+The default value, 0 \(zero\), means that there is no time-out, and it causes Windows PowerShell to wait indefinitely.
 
 ```yaml
 Type: Int64
@@ -298,7 +297,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -320,6 +319,8 @@ If you close the current session, the event queue is discarded and the event sub
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135245)
+
 [Get-Event](00000000-0000-0000-0000-000000000000)
 
 [New-Event](00000000-0000-0000-0000-000000000000)
@@ -333,4 +334,5 @@ If you close the current session, the event queue is discarded and the event sub
 [Unregister-Event](00000000-0000-0000-0000-000000000000)
 
 [Wait-Event](00000000-0000-0000-0000-000000000000)
+
 

@@ -2,7 +2,7 @@
 Module Name: \Workflow
 Module Guid: 00000000-0000-0000-0000-000000000000
 Download Help Link: n/a
-Help Version: 0.0.0.0
+Help Version: 3.0.3.0
 Locale: en-US
 ---
 
@@ -16,4 +16,5 @@ Locale: en-US
 
 ### [New-PSWorkflowSession](New-PSWorkflowSession.md)
 {{Manually Enter New-PSWorkflowSession Description Here}}
+
 

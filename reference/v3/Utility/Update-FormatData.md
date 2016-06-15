@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113420
 schema: 2.0.0
 ---
 
@@ -24,7 +23,7 @@ You can use the parameters of Update-FormatData to add new formatting files to t
 Formatting files are text files in XML format with the format.ps1xml file name extension.
 The formatting data in the files defines the display of Microsoft .NET Framework objects in the session.
 
-When Windows PowerShell starts, it loads the format data from the formatting files in the Windows PowerShell installation directory ($pshome) into the session.
+When Windows PowerShell starts, it loads the format data from the formatting files in the Windows PowerShell installation directory \($pshome\) into the session.
 You can use Update-FormatData to reload the formatting data into the current session without restarting Windows PowerShell.
 This is useful when you have added or changed a formatting file, but do not want to interrupt the session.
 
@@ -88,7 +87,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue, ByPropertyName)
+Accept pipeline input: true (ByValue, ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -109,7 +108,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -123,8 +122,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -140,8 +139,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -161,4 +160,7 @@ If the formatting file for a module changes, you can run an Update-FormatData co
 You do not need to import the module again.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113420)
+
 

@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135255
 schema: 2.0.0
 ---
 
@@ -62,7 +61,7 @@ Namespace            ModuleName
 ```
 
 This example gets the alias properties in the Types.ps1xml.
-(For information about this file, see about_Types.ps1xml.)
+\(For information about this file, see about_Types.ps1xml.\)
 
 The first command saves the path to the Types.ps1xml file in the $Path variable.
 
@@ -162,7 +161,7 @@ The first command creates a hash table for the default namespace the that snippe
 PS C:\>$SnippetNamespace = @{snip="http://schemas.microsoft.com/PowerShell/Snippets"}
 
 The second command uses the Select-Xml cmdlet to get the content of the Title element of each snippet. It uses the Path parameter to specify the Snippets directory and the Namespace parameter to specify the namespace in the $SnippetNamespace variable. The value of  the XPath parameter is the "snip" namespace key, a colon (:), and the name of the Title element.The command uses a pipeline operator (|) to send each Node property that Select-Xml returns to the ForEach-Object cmdlet, which gets the title in the value of the InnerXml property of the node.
-PS C:\>Select-Xml -Path $home\Documents\WindowsPowerShell\Snippets -Namespace $SnippetNamespace -XPath "//snip:Title" | foreach {$_.Node.Innerxml}
+PS C:\>Select-Xml –Path $home\Documents\WindowsPowerShell\Snippets –Namespace $SnippetNamespace –XPath "//snip:Title" | foreach {$_.Node.Innerxml}
 ```
 
 This example shows how to use the Select-Xml cmdlet with XML documents that use the default "xmlns" namespace.
@@ -183,7 +182,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -203,7 +202,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -219,7 +218,7 @@ Aliases:
 Required: True
 Position: 2
 Default value: None
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: True
 ```
 
@@ -236,7 +235,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -254,7 +253,7 @@ Aliases:
 Required: True
 Position: 2
 Default value: None
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: true (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
@@ -273,7 +272,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -288,10 +287,13 @@ You can pipe a path or XML node to Select-Xml.
 
 ## NOTES
 XPath is a standard language that is designed to identify parts of an XML document.
-For more information about the XPath language, see the "Selection Filters" section of the "Event Selection" topic in the MSDN (Microsoft Developer Network) library at http://go.microsoft.com/fwlink/?LinkId=143608.
+For more information about the XPath language, see the "Selection Filters" section of the "Event Selection" topic in the MSDN \(Microsoft Developer Network\) library at http://go.microsoft.com/fwlink/?LinkId=143608.
 And, see "XPath Reference" in the MSDN library at http://go.microsoft.com/fwlink/?LinkId=143609.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135255)
+
 [ConvertTo-Xml](2a4a0f4d-707b-4751-bd08-5da69fc81c98)
+
 

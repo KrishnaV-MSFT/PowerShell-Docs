@@ -1,12 +1,11 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135266
 schema: 2.0.0
 ---
 
 # Test-Connection
 ## SYNOPSIS
-Sends ICMP echo request packets ("pings") to one or more computers.
+Sends ICMP echo request packets \("pings"\) to one or more computers.
 
 ## SYNTAX
 
@@ -31,8 +30,8 @@ Test-Connection [-ComputerName] <String[]> [-Authentication <AuthenticationLevel
 ```
 
 ## DESCRIPTION
-The Test-Connection cmdlet sends Internet Control Message Protocol (ICMP) echo request packets ("pings") to one or more remote computers and returns the echo response replies.
-You can use this cmdlet to determine whether a particular computer can be contacted across an Internet Protocol (IP) network.
+The Test-Connection cmdlet sends Internet Control Message Protocol \(ICMP\) echo request packets \("pings"\) to one or more remote computers and returns the echo response replies.
+You can use this cmdlet to determine whether a particular computer can be contacted across an Internet Protocol \(IP\) network.
 
 You can use the parameters of Test-Connection to specify both the sending and receiving computers, to run the command as a background job, to set a timeout and number of pings, and to configure the connection and authentication.
 
@@ -52,7 +51,7 @@ ADMIN1        Server01        157.59.137.44                32       0
 ADMIN1        Server01        157.59.137.44                32       1
 ```
 
-This command sends echo request packets ("pings") from the local computer to the Server01 computer.
+This command sends echo request packets \("pings"\) from the local computer to the Server01 computer.
 This command uses the ComputerName parameter to specify the Server01 computer, but omits the optional parameter name.
 
 ### -------------------------- EXAMPLE 2 --------------------------
@@ -139,13 +138,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Authentication
 Specifies the authentication level that is used for the  WMI connection.
-(Test-Connection uses WMI.)
+\(Test-Connection uses WMI.\)
 
 Valid values are:
 
@@ -173,7 +172,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Packet (4)
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -189,7 +188,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 32
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -210,7 +209,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -226,7 +225,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 4
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -245,7 +244,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Current user
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -260,13 +259,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: 1 (second)
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Impersonation
 Specifies the impersonation level to use when calling WMI.
-(Test-Connection uses WMI.) The default value is "Impersonate".
+\(Test-Connection uses WMI.\) The default value is "Impersonate".
 
 Valid values are:
 
@@ -286,7 +285,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 3
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -301,7 +300,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -318,7 +317,7 @@ Aliases:
 Required: True
 Position: 2
 Default value: Local computer
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -336,14 +335,14 @@ Aliases:
 Required: False
 Position: Named
 Default value: 32
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -TimeToLive
-Specifies the maximum time, in seconds, that each echo request packet ("pings") is active.
+Specifies the maximum time, in seconds, that each echo request packet \("pings"\) is active.
 Enter an integer between 1 and 255.
-The default value is 80 (seconds).
+The default value is 80 \(seconds\).
 The alias of the TimeToLive parameter is TTL.
 
 ```yaml
@@ -354,7 +353,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 80
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -378,9 +377,12 @@ The Source parameter set was introduced in Windows PowerShell 3.0.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135266)
+
 [Add-Computer](712f3460-c5d0-4af8-8de6-6d06e4a1a838)
 
 [Restart-Computer](ba50f64c-866e-4315-91c7-0ce16b44c47e)
 
 [Stop-Computer](bae0484a-418a-432c-a172-34b5165dd0b1)
+
 

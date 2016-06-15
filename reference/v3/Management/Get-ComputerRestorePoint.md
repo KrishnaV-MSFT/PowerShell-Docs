@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135215
 schema: 2.0.0
 ---
 
@@ -90,7 +89,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -107,7 +106,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: All restore points
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -125,9 +124,11 @@ When you use the LastStatus parameter, this cmdlet returns a string.
 ## NOTES
 To run a Get-ComputerRestorePoint command on Windows Vista and later versions of Windows, open Windows PowerShell with the "Run as administrator" option.
 
-This cmdlet uses the Windows Management Instrumentation (WMI) SystemRestore class.
+This cmdlet uses the Windows Management Instrumentation \(WMI\) SystemRestore class.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135215)
 
 [Checkpoint-Computer](9ef7dd97-dbd9-43de-8988-9ab85e7827ad)
 
@@ -138,4 +139,5 @@ This cmdlet uses the Windows Management Instrumentation (WMI) SystemRestore clas
 [Restart-Computer](ba50f64c-866e-4315-91c7-0ce16b44c47e)
 
 [Restore-Computer](c570f18d-f1dd-462a-b00b-3eb1d2a81dfc)
+
 

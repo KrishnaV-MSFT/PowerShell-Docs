@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135269
 schema: 2.0.0
 ---
 
@@ -59,7 +58,7 @@ This command cancels all event subscriptions in the session.
 
 The command uses the Get-EventSubscriber cmdlet to get all event subscriber objects in the session, including the subscribers that are hidden by using the SupportEvent parameter of the event registration cmdlets.
 
-It uses a pipeline operator (|) to send the subscriber objects to Unregister-Event, which deletes them from the session.
+It uses a pipeline operator \(|\) to send the subscriber objects to Unregister-Event, which deletes them from the session.
 To complete the task, the Force parameter is also required on Unregister-Event.
 
 ## PARAMETERS
@@ -75,7 +74,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -92,7 +91,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -109,7 +108,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -123,8 +122,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -140,8 +139,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -164,6 +163,8 @@ To delete a custom event from the session, you must remove it programmatically o
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135269)
+
 [Get-Event](4ac85bbe-2abd-4e86-a313-edae6a08e435)
 
 [Get-EventSubscriber](f03c3f66-0472-40d1-b971-ce4af6ea7c02)
@@ -181,4 +182,5 @@ To delete a custom event from the session, you must remove it programmatically o
 [Unregister-Event](313e8361-8646-4b0d-b72f-f76987c49591)
 
 [Wait-Event](bd2e7d77-2642-4628-b937-0a7d52033399)
+
 

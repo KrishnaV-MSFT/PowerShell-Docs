@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_WSMan.xml
-online version: http://go.microsoft.com/fwlink/?LinkId=141449
 schema: 2.0.0
 ---
 
@@ -47,7 +46,7 @@ server01                                      Container
 This command creates a connection to the remote server01 computer by using the connection options that are defined in the New-WSManSessionOption command.
 
 The first command uses the New-WSManSessionOption cmdlet to store a set of connection setting options in the $a variable.
-In this case, the session options set a connection time out of 30 seconds (30,000 milliseconds).
+In this case, the session options set a connection time out of 30 seconds \(30,000 milliseconds\).
 
 The second command uses the SessionOption parameter to pass the credentials that are stored in the $a variable to Connect-WSMan.
 Then, Connect-WSMan connects to the remote server01 computer by using the specified session options.
@@ -71,7 +70,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -86,7 +85,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -112,7 +111,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -122,7 +121,7 @@ Possible values are:
 
 - Basic: Basic is a scheme in which the user name and password are sent in clear-text to the server or proxy.
 - Digest: Digest is a challenge-response scheme that uses a server-specified data string for the challenge.
-- Negotiate (the default): Negotiate is a challenge-response scheme that negotiates with the server or proxy to determine which scheme to use for authentication. Examples are the Kerberos protocol and NTLM.
+- Negotiate \(the default\): Negotiate is a challenge-response scheme that negotiates with the server or proxy to determine which scheme to use for authentication. Examples are the Kerberos protocol and NTLM.
 
 ```yaml
 Type: ProxyAuthentication
@@ -132,7 +131,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Negotiate
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -147,7 +146,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -163,12 +162,12 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -SkipCACheck
-Specifies that when connecting over HTTPS, the client does not validate that the server certificate is signed by a trusted certificate authority (CA).
+Specifies that when connecting over HTTPS, the client does not validate that the server certificate is signed by a trusted certificate authority \(CA\).
 Use this option only when the remote computer is trusted by other means, for example, if the remote computer is part of a network that is physically secure and isolated or the remote computer is listed as a trusted host in the WS-Management configuration.
 
 ```yaml
@@ -179,12 +178,12 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -SkipCNCheck
-Specifies that the certificate common name (CN) of the server does not need to match the hostname of the server.
+Specifies that the certificate common name \(CN\) of the server does not need to match the hostname of the server.
 This is used only in remote operations using HTTPS.
 This option should only be used for trusted computers.
 
@@ -196,7 +195,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -211,7 +210,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -227,7 +226,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -240,6 +239,8 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkId=141449)
 
 [Connect-WSMan](74e46714-497f-4306-be84-109ab5b654cc)
 
@@ -264,4 +265,5 @@ Accept wildcard characters: False
 [Set-WSManQuickConfig](6a0e74db-94a7-445a-8485-f64ca1a4948a)
 
 [Test-WSMan](b8c6fb53-48fb-411b-a989-618a74a68067)
+
 

@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113290
 schema: 2.0.0
 ---
 
@@ -28,7 +27,7 @@ You can use this cmdlet to display the output of a command in a Web page.
 
 You can use the parameters of ConvertTo-Html to select object properties, to specify a table or list format, to specify the HTML page title, to add text before and after the object, and to return only the table or list fragment, instead of a strict DTD page.
 
-When you submit multiple objects to ConvertTo-Html, Windows PowerShell creates the table (or list) based on the properties of the first object that you submit.
+When you submit multiple objects to ConvertTo-Html, Windows PowerShell creates the table \(or list\) based on the properties of the first object that you submit.
 If the remaining objects do not have one of the specified properties, the property value of that object is an empty cell.
 If the remaining objects have additional properties, those property values are not included in the file.
 
@@ -51,7 +50,7 @@ PS C:\>invoke-item aliases.htm
 This command creates an HTML page that lists the Windows PowerShell aliases in the current console.
 
 The command uses the Get-Alias cmdlet to get the aliases.
-It uses the pipeline operator (|) to send the aliases to the ConvertTo-Html cmdlet, which creates the HTML page.
+It uses the pipeline operator \(|\) to send the aliases to the ConvertTo-Html cmdlet, which creates the HTML page.
 
 ### -------------------------- EXAMPLE 3 --------------------------
 ```
@@ -60,9 +59,9 @@ PS C:\>get-eventlog -logname "Windows PowerShell" | convertto-html > pslog.htm
 
 This command creates an HTML page called pslog.htm that displays the events in the Windows PowerShell event log on the local computer.
 
-It uses the Get-EventLog cmdlet to get the events in the Windows PowerShell log and then uses the pipeline operator (|) to send the events to the ConvertTo-Html cmdlet.
+It uses the Get-EventLog cmdlet to get the events in the Windows PowerShell log and then uses the pipeline operator \(|\) to send the events to the ConvertTo-Html cmdlet.
 
-The command also uses the redirection operator (\>) to send the HTML code to the pslog.htm file.
+The command also uses the redirection operator \(\>\) to send the HTML code to the pslog.htm file.
 
 ### -------------------------- EXAMPLE 4 --------------------------
 ```
@@ -72,14 +71,14 @@ PS C:\>get-process | convertto-html -property Name, Path, Company -title "Proces
 These commands create and open an HTML page that lists the name, path, and company of the processes on the local computer.
 
 The first command uses the Get-Process cmdlet to get objects that represent the processes running on the computer.
-The command uses the pipeline operator (|) to send the process objects to the ConvertTo-Html cmdlet.
+The command uses the pipeline operator \(|\) to send the process objects to the ConvertTo-Html cmdlet.
 
 The command uses the Property parameter to select three properties of the process objects to be included in the table.
 The command uses the Title parameter to specify a title for the HTML page.
-The command also uses the redirection operator (\>) to send the resulting HTML to a file named Proc.htm.
+The command also uses the redirection operator \(\>\) to send the resulting HTML to a file named Proc.htm.
 
-The second command uses the Invoke-Item cmdlet (alias = ii) to open the Proc.htm in the default browser.
-The two commands are separated by a semicolon (;).
+The second command uses the Invoke-Item cmdlet \(alias = ii\) to open the Proc.htm in the default browser.
+The two commands are separated by a semicolon \(;\).
 
 ### -------------------------- EXAMPLE 5 --------------------------
 ```
@@ -105,7 +104,7 @@ PS C:\>get-service | convertto-html -as LIST > services.htm
 
 This command creates an HTML page of the service objects that the Get-Service cmdlet returns.
 The command uses the As parameter to specify a list format.
-The redirection operator (\>) sends the resulting HTML to the Services.htm file.
+The redirection operator \(\>\) sends the resulting HTML to the Services.htm file.
 
 ### -------------------------- EXAMPLE 7 --------------------------
 ```
@@ -122,7 +121,7 @@ PS C:\>get-date | cth -fragment
 
 This command uses ConvertTo-Html to generate an HTML table of the current date.
 The command uses the Get-Date cmdlet to get the current date.
-It uses a pipeline operator (|) to send the results to the ConvertTo-Html cmdlet (aliased as "cth").
+It uses a pipeline operator \(|\) to send the results to the ConvertTo-Html cmdlet \(aliased as "cth"\).
 
 The ConvertTo-Html command includes the Fragment parameter, which limits the output to an HTML table.
 As a result, the other elements of an HTML page, such as the \<HEAD\> and \<BODY\> tags, are omitted.
@@ -134,7 +133,7 @@ PS C:\>get-eventlog -log "Windows PowerShell" | convertto-html -property id, lev
 
 This command uses the Get-EventLog cmdlet to get events from the "Windows PowerShell" event log.
 
-It uses a pipeline operator (|) to send the events to the ConvertTo-Html cmdlet, which converts the events to HTML format.
+It uses a pipeline operator \(|\) to send the events to the ConvertTo-Html cmdlet, which converts the events to HTML format.
 
 The ConvertTo-Html command uses the Property parameter to select only the ID, Level, and Task properties of the event.
 
@@ -148,10 +147,10 @@ This command creates and opens a Web page that displays the services on the comp
 It uses the Title, Body, PreContent, and PostContent parameters of ConvertTo-Html to customize the output.
 
 The first part of the command uses the Get-Service cmdlet to get the services on the computer that begin with "A".
-The command uses a pipeline operator (|) to send the results to the ConvertTo-Html cmdlet.
-The command uses a redirection operator (\>) to send the output to the Services.htm file.
+The command uses a pipeline operator \(|\) to send the results to the ConvertTo-Html cmdlet.
+The command uses a redirection operator \(\>\) to send the output to the Services.htm file.
 
-A semicolon (;) ends the first command and starts a second command, which uses the Invoke-Item cmdlet (alias = "ii") to open the Services.htm file in the default browser.
+A semicolon \(;\) ends the first command and starts a second command, which uses the Invoke-Item cmdlet \(alias = "ii"\) to open the Services.htm file in the default browser.
 
 ## PARAMETERS
 
@@ -175,7 +174,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Table
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -191,12 +190,12 @@ Aliases:
 Required: False
 Position: 4
 Default value: No text.
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -CssUri
-Specifies the Uniform Resource Identifier (URI) of the cascading style sheet (CSS) that is applied to the HTML file. 
+Specifies the Uniform Resource Identifier \(URI\) of the cascading style sheet \(CSS\) that is applied to the HTML file. 
 The URI is included in a style sheet link in the output.
 
 ```yaml
@@ -207,7 +206,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -223,7 +222,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -240,7 +239,7 @@ Aliases:
 Required: False
 Position: 2
 Default value: <title>HTML TABLE</title>
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -248,7 +247,7 @@ Accept wildcard characters: False
 Specifies the objects to be represented in HTML.
 Enter a variable that contains the objects or type a command or expression that gets the objects.
 
-If you use this parameter to submit multiple objects, such as all of the services on a computer, ConvertTo-Html creates a table that displays the properties of a collection or of an array of objects (System.Object\[\]).
+If you use this parameter to submit multiple objects, such as all of the services on a computer, ConvertTo-Html creates a table that displays the properties of a collection or of an array of objects \(System.Object\[\]\).
 To create a table of the individual objects, use the pipeline operator to pipe the objects to ConvertTo-Html.
 
 ```yaml
@@ -259,7 +258,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -275,7 +274,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: No text
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -291,7 +290,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: No text
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -301,7 +300,7 @@ The value of the Property parameter can be a new calculated property.
 To create a calculated property, use a hash table.
 Valid keys are:
 
--- Label \<string\> (unlike with Select-Object or Format-Table, the Name key is not supported)
+-- Label \<string\> \(unlike with Select-Object or Format-Table, the Name key is not supported\)
 -- Expression \<string\> or \<script block\>
 
 ```yaml
@@ -312,7 +311,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -327,7 +326,7 @@ Aliases:
 Required: False
 Position: 3
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -346,15 +345,18 @@ To use this cmdlet, pipe one or more objects to the cmdlet or use the InputObjec
 When the input consists of multiple objects, the output of these two methods is quite different.
 
 --  When you pipe multiple objects to a cmdlet, Windows PowerShell sends the objects to the cmdlet one at a time. As a result, ConvertTo-Html creates a table that displays the individual objects. For example, if you pipe the processes on a computer to ConvertTo-Html, the resulting table displays all of the processes.
---  When you use the InputObject parameter to submit multiple objects, ConvertTo-Html receives these objects as a collection or as an array. As a result, it creates a table that displays the array and its properties, not the items in the array. For example, if you use InputObject to submit the processes on a computer to ConvertTo-Html, the resulting table displays an object array (System.Object\[\]) and its properties.
+--  When you use the InputObject parameter to submit multiple objects, ConvertTo-Html receives these objects as a collection or as an array. As a result, it creates a table that displays the array and its properties, not the items in the array. For example, if you use InputObject to submit the processes on a computer to ConvertTo-Html, the resulting table displays an object array \(System.Object\[\]\) and its properties.
 
 To comply with the XHTML Strict DTD,the DOCTYPE tag is modified accordingly:
 
-(\<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"\>)
+\(\<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"\>\)
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113290)
 
 [ConvertTo-Csv](02cf7085-f243-45ed-b803-da0466fd6085)
 
 [ConvertTo-Xml](2a4a0f4d-707b-4751-bd08-5da69fc81c98)
+
 

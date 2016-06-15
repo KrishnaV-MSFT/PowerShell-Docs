@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113418
 schema: 2.0.0
 ---
 
@@ -24,8 +23,8 @@ Test-Path [-Credential <PSCredential>] [-Exclude <String[]>] [-Filter <String>] 
 
 ## DESCRIPTION
 The Test-Path cmdlet determines whether all elements of the path exist.
-It returns TRUE ($true) if all elements exist and FALSE ($false) if any are missing.
-It can also tell whether the path syntax is valid and whether the path leads to a container or a terminal (leaf) element.
+It returns TRUE \($true\) if all elements exist and FALSE \($false\) if any are missing.
+It can also tell whether the path syntax is valid and whether the path leads to a container or a terminal \(leaf\) element.
 
 ## EXAMPLES
 
@@ -48,7 +47,7 @@ These commands test the path to the Windows PowerShell profile.
 
 The first command determines whether all elements in the path exist.
 The second command determines whether the syntax of the path is correct.
-In this case, the path is FALSE, but the syntax is correct (TRUE).
+In this case, the path is FALSE, but the syntax is correct \(TRUE\).
 These commands use $profile, the automatic variable that points to the location for the profile, even if the profile does not exist.
 
 For more information about automatic variables, see about_Automatic_Variables.
@@ -63,7 +62,7 @@ This command tells whether there are any files in the Commercial Buildings direc
 The command uses the Path parameter to specify the path.
 Because it includes a space, the path is enclosed in quotes.
 The asterisk at the end of the path indicates the contents of the Commercial Building directory.
-(With long paths, like this one, type the first few letters of the path, and then use the TAB key to complete the path.)
+\(With long paths, like this one, type the first few letters of the path, and then use the TAB key to complete the path.\)
 
 The command uses the Exclude parameter to specify files that will be omitted from the evaluation.
 
@@ -131,7 +130,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -149,7 +148,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -167,7 +166,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -183,7 +182,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -210,7 +209,7 @@ Accept wildcard characters: False
 Specifies a path to be tested.
 Wildcards are permitted.
 If the path includes spaces, enclose it in quotation marks.
-The parameter name ("Path") is optional.
+The parameter name \("Path"\) is optional.
 
 ```yaml
 Type: String[]
@@ -242,14 +241,14 @@ Aliases: Type
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -UseTransaction
 Includes the command in the active transaction.
 This parameter is valid only when a transaction is in progress.
-For more information, see Includes the command in the active transaction.
+For more information, see Includes the command in the active transaction.
 This parameter is valid only when a transaction is in progress.
 For more information, see
 
@@ -260,15 +259,15 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ## INPUTS
 
 ### System.String
-You can pipe a string that contains a path (but not a literal path) to Test-Path.
+You can pipe a string that contains a path \(but not a literal path\) to Test-Path.
 
 ## OUTPUTS
 
@@ -276,7 +275,7 @@ You can pipe a string that contains a path (but not a literal path) to Test-Path
 The cmdlet returns "True" when the path exists and "False" when it does not.
 
 ## NOTES
-The cmdlets that contain the Path noun (the Path cmdlets) manipulate path names and return the names in a concise format that all Windows PowerShell providers can interpret.
+The cmdlets that contain the Path noun \(the Path cmdlets\) manipulate path names and return the names in a concise format that all Windows PowerShell providers can interpret.
 They are designed for use in programs and scripts where you want to display all or part of a path name in a particular format.
 Use them like you would use Dirname, Normpath, Realpath, Join, or other path manipulators.
 
@@ -288,6 +287,8 @@ For more information, see about_Providers.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113418)
+
 [Convert-Path](f2548a68-4175-4872-961b-cd478ec0d6b3)
 
 [Join-Path](742e18e1-55c8-44ce-9c05-526bc22bf1f5)
@@ -297,4 +298,5 @@ For more information, see about_Providers.
 [Split-Path](844e6307-86cc-4d08-a82f-991414d582e9)
 
 [about_Providers](55e2974f-3314-48d2-8b1b-abdea6b303cb)
+
 

@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113332
 schema: 2.0.0
 ---
 
@@ -49,7 +48,7 @@ The default display shows the status, service name, and display name of each ser
 PS C:\>get-service wmi*
 ```
 
-This command retrieves services with service names that begin with "WMI" (the acronym for Windows Management Instrumentation).
+This command retrieves services with service names that begin with "WMI" \(the acronym for Windows Management Instrumentation\).
 
 ### -------------------------- EXAMPLE 3 --------------------------
 ```
@@ -75,7 +74,7 @@ PS C:\>get-service | where-object {$_.Status -eq "Running"}
 
 This command displays only the services that are currently running.
 It uses the Get-Service cmdlet to get all of the services on the computer.
-The pipeline operator (|) passes the results to the Where-Object cmdlet, which selects only the services with a Status property that equals "Running".
+The pipeline operator \(|\) passes the results to the Where-Object cmdlet, which selects only the services with a Status property that equals "Running".
 
 Status is only one property of service objects.
 To see all of the properties, type "get-service | get-member".
@@ -105,7 +104,7 @@ NoOfDependentServices : 1
 These commands list the services on the computer that have dependent services.
 
 The first command uses the Get-Service cmdlet to get the services on the computer.
-A pipeline operator (|) sends the services to the Where-Object cmdlet, which selects the services whose DependentServices property is not null.
+A pipeline operator \(|\) sends the services to the Where-Object cmdlet, which selects the services whose DependentServices property is not null.
 
 Another pipeline operator sends the results to the Format-List cmdlet.
 The command uses its Property parameter to display the name of the service, the name of the dependent services, and a calculated property that displays the number of dependent services that each service has.
@@ -165,10 +164,10 @@ Server01       Running WinRM Windows Remote Management (WS-Management)
 Server02       Running WinRM Windows Remote Management (WS-Management)
 ```
 
-This command uses the Get-Service cmdlet to run a "Get-Service Winrm" command on two remote computers and the local computer ("localhost").
+This command uses the Get-Service cmdlet to run a "Get-Service Winrm" command on two remote computers and the local computer \("localhost"\).
 
 The Get-Service command runs on the remote computers, and the results are returned to the local computer.
-A pipeline operator (|) sends the results to the Format-Table cmdlet, which formats the services as a table.
+A pipeline operator \(|\) sends the results to the Format-Table cmdlet, which formats the services as a table.
 The Format-Table command uses the Property parameter to specify the properties displayed in the table, including the MachineName property.
 
 ### -------------------------- EXAMPLE 10 --------------------------
@@ -186,7 +185,7 @@ PS C:\>"winrm" | get-service
 ```
 
 This command gets the WinRM service on the local computer.
-This example shows that you can pipe a service name string (enclosed in quotation marks) to Get-Service.
+This example shows that you can pipe a service name string \(enclosed in quotation marks\) to Get-Service.
 
 ## PARAMETERS
 
@@ -195,7 +194,7 @@ Gets the services running on the specified computers.
 The default is the local computer.
 
 Type the NetBIOS name, an IP address, or a fully qualified domain name of a remote computer.
-To specify the local computer, type the computer name, a dot (.), or "localhost".
+To specify the local computer, type the computer name, a dot \(.\), or "localhost".
 
 This parameter does not rely on Windows PowerShell remoting.
 You can use the ComputerName parameter of Get-Service even if your computer is not configured to run remote commands.
@@ -208,7 +207,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Local computer
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -225,7 +224,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -242,7 +241,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: All services
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -260,7 +259,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -278,7 +277,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -295,7 +294,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -312,7 +311,7 @@ Aliases:
 Required: False
 Position: 1
 Default value: All services
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: true (ByPropertyName, ByValue)
 Accept wildcard characters: True
 ```
 
@@ -330,7 +329,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -361,6 +360,8 @@ The sort is based on the integer value, not the name.
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113332)
+
 [New-Service](ad24021a-4603-4c9c-bd20-8f9bdde123fa)
 
 [Restart-Service](9fa33bc1-264e-40aa-8731-607ca99cc805)
@@ -374,4 +375,5 @@ The sort is based on the integer value, not the name.
 [Stop-Service](58033475-759b-42e4-9395-c077aa55934e)
 
 [Suspend-Service](5b8bd69a-0a18-4478-b257-d442ddef417c)
+
 

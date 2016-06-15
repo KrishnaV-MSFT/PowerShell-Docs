@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=113385
 schema: 2.0.0
 ---
 
@@ -38,7 +37,7 @@ You can specify the services by their service names or display names, or you can
 PS C:\>Restart-Service winmgmt
 ```
 
-This command restarts the Windows Management Instrumentation service (WinMgmt) on the local computer.
+This command restarts the Windows Management Instrumentation service \(WinMgmt\) on the local computer.
 
 ### -------------------------- EXAMPLE 2 --------------------------
 ```
@@ -55,7 +54,7 @@ PS C:\>Get-Service net* | Where-Object {$_.Status -eq "Stopped"} | Restart-Servi
 This command starts all of the stopped network services on the computer.
 
 It uses the Get-Service cmdlet to get objects representing the services whose service name begins with "net".
-(The optional Name parameter name is omitted.) The pipeline operator (|) sends the services object to the Where-Object cmdlet, which selects only the services with a status of "stopped." Another pipeline operator sends the selected services to Restart-Service.
+\(The optional Name parameter name is omitted.\) The pipeline operator \(|\) sends the services object to the Where-Object cmdlet, which selects only the services with a status of "stopped." Another pipeline operator sends the selected services to Restart-Service.
 In practice, you would use the WhatIf parameter to see the effect of the command before using it.
 
 ## PARAMETERS
@@ -72,7 +71,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -90,7 +89,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -105,7 +104,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -123,7 +122,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: True
 ```
 
@@ -139,7 +138,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -154,7 +153,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByPropertyName, ByValue)
+Accept pipeline input: true (ByPropertyName, ByValue)
 Accept wildcard characters: False
 ```
 
@@ -170,7 +169,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -194,6 +193,8 @@ The service names appears in the Name column, and the display names appear in th
 
 ## RELATED LINKS
 
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=113385)
+
 [Get-Service](77f3c94b-6ffd-4906-8216-3debbf5ffe79)
 
 [New-Service](ad24021a-4603-4c9c-bd20-8f9bdde123fa)
@@ -207,4 +208,5 @@ The service names appears in the Name column, and the display names appear in th
 [Stop-Service](58033475-759b-42e4-9395-c077aa55934e)
 
 [Suspend-Service](5b8bd69a-0a18-4478-b257-d442ddef417c)
+
 

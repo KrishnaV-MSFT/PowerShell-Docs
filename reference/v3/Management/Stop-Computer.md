@@ -1,12 +1,11 @@
 ---
 external help file: PSITPro3_Management.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=135263
 schema: 2.0.0
 ---
 
 # Stop-Computer
 ## SYNOPSIS
-Stops (shuts down) local and remote computers.
+Stops \(shuts down\) local and remote computers.
 
 ## SYNTAX
 
@@ -108,13 +107,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Authentication
 Specifies the authentication level that is used for the  WMI connection.
-(Stop-Computer uses WMI.) The default value is Packet.
+\(Stop-Computer uses WMI.\) The default value is Packet.
 
 Valid values are:
 
@@ -142,7 +141,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Packet (4)
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -164,7 +163,7 @@ Aliases: CN, __SERVER, Server, IPAddress
 Required: False
 Position: 1
 Default value: Local computer
-Accept pipeline input: True (ByPropertyName)
+Accept pipeline input: true (ByPropertyName)
 Accept wildcard characters: False
 ```
 
@@ -182,7 +181,7 @@ Aliases:
 Required: False
 Position: 2
 Default value: Current user
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -197,13 +196,13 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
 ### -Impersonation
 Specifies the impersonation level to use when calling WMI.
-(Stop-Computer uses WMI.) The default value is "Impersonate".
+\(Stop-Computer uses WMI.\) The default value is "Impersonate".
 
 Valid values are:
 
@@ -223,7 +222,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: Impersonate
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -241,7 +240,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 32
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -255,8 +254,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -272,8 +271,8 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
-Accept pipeline input: False
+Default value: false
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -285,7 +284,7 @@ You cannot pipe input to this cmdlet.
 ## OUTPUTS
 
 ### None or System.Management.Automation.RemotingJob
-When you use the AsJob parameter, the cmdlet returns a job object (System.Management.Automation.RemotingJob).
+When you use the AsJob parameter, the cmdlet returns a job object \(System.Management.Automation.RemotingJob\).
 Otherwise, it does not generate any output.
 
 ## NOTES
@@ -295,6 +294,8 @@ In Windows PowerShell 2.0, the AsJob parameter does not work reliably when you a
 In Windows PowerShell 3.0, the implementation is changed to resolve this problem.
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=135263)
 
 [Add-Computer](712f3460-c5d0-4af8-8de6-6d06e4a1a838)
 
@@ -309,4 +310,5 @@ In Windows PowerShell 3.0, the implementation is changed to resolve this problem
 [Restore-Computer](c570f18d-f1dd-462a-b00b-3eb1d2a81dfc)
 
 [Test-Connection](7c54e3a1-8d8c-44ad-9056-ef0514c158d6)
+
 

@@ -1,6 +1,5 @@
 ---
 external help file: PSITPro3_Utility.xml
-online version: http://go.microsoft.com/fwlink/?LinkID=217032
 schema: 2.0.0
 ---
 
@@ -15,7 +14,7 @@ ConvertTo-Json [-InputObject] <Object> [-Compress] [-Depth <Int32>]
 ```
 
 ## DESCRIPTION
-The ConvertTo-Json cmdlet converts any object to a string in JavaScript Object Notation (JSON) format.
+The ConvertTo-Json cmdlet converts any object to a string in JavaScript Object Notation \(JSON\) format.
 The properties are converted to field names, the field values are converted to property values, and the methods are removed.
 
 You can then use the ConvertFrom-Json cmdlet to convert a JSON-formatted string to a JSON object, which is easily managed in Windows PowerShell.
@@ -190,7 +189,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -206,7 +205,7 @@ Aliases:
 Required: False
 Position: Named
 Default value: 2
-Accept pipeline input: False
+Accept pipeline input: false
 Accept wildcard characters: False
 ```
 
@@ -215,7 +214,7 @@ Specifies the objects to convert to JSON format.
 Enter a variable that contains the objects, or type a command or expression that gets the objects.
 You can also pipe an object to ConvertTo-Json.
 
-The InputObject parameter is required, but its value can be null ($null) or an empty string.
+The InputObject parameter is required, but its value can be null \($null\) or an empty string.
 When the input object is $null, ConvertTo-Json does not generate any output.
 When the input object is an empty string, ConvertTo-Json returns an empty string.
 
@@ -227,7 +226,7 @@ Aliases:
 Required: True
 Position: 1
 Default value: 
-Accept pipeline input: True (ByValue)
+Accept pipeline input: true (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -241,9 +240,11 @@ You can pipe any object to ConvertTo-Json.
 ### System.String
 
 ## NOTES
-The ConvertTo-Json cmdlet is implemented by using the JavaScriptSerializer class (http://msdn.microsoft.com/library/system.web.script.serialization.javascriptserializer(VS.100).aspx).
+The ConvertTo-Json cmdlet is implemented by using the JavaScriptSerializer class \(http://msdn.microsoft.com/library/system.web.script.serialization.javascriptserializer\(VS.100\).aspx\).
 
 ## RELATED LINKS
+
+[Online Version:](http://go.microsoft.com/fwlink/?LinkID=217032)
 
 [An Introduction to JavaScript Object Notation (JSON) in JavaScript and .NET](http://msdn.microsoft.com/library/bb299886.aspx)
 
@@ -252,4 +253,5 @@ The ConvertTo-Json cmdlet is implemented by using the JavaScriptSerializer class
 [Invoke-WebRequest](3e3dac17-3373-4d22-a54a-9d56a4a556c3)
 
 [Invoke-RestMethod](ff5e372e-cf12-4647-9055-58c2190b9534)
+
 

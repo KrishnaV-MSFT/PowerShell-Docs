@@ -55,7 +55,7 @@ Enter-PSHostProcess -Id 2640 -AppDomainName DscPsPluginWkr\_AppDomain
 ```PowerShell
 Debug-Runspace -Id 3
 ```
-![](images/DscResourceDebugging.jpg)
+![](../images/DscResourceDebugging.jpg)
 
 After you have the debugger attached, set line breakpoints where you want to investigate script execution and run the **continue** debugger command to let the script run in the debugger. When you are done debugging, you can stop the script from running by typing the **quit** debugger command, or let the script continue to run without the debugger by running the **detach** debugger command.
 

@@ -1,12 +1,12 @@
 # [Windows Management Framework (WMF) Overview](wmf-overview.md)
 
-# [WMF 5.1 Release Notes](5.1/release-notes.md)
-## [New Scenarios and Features in WMF 5.1](5.1/scenarios-features.md)
-## [Install and Configure WMF 5.1](5.1/install-configure.md)
-## [Known Issues in WMF 5.1](5.1/known-issues.md)
-## [WMF 5.1 Operating System Compatibility](5.1/Compatibility.md)
+# [WMF 5.1](5.1/release-notes.md)
+## [New Scenarios and Features](5.1/scenarios-features.md)
+## [Install and Configure](5.1/install-configure.md)
+## [Known Issues](5.1/known-issues.md)
+## [Compatibility](5.1/Compatibility.md)
 
-# [WMF 5.0 Release Notes](5.0/releasenotes.md)
+# [WMF 5.0](5.0/releasenotes.md)
 ## [Installation Details](5.0/requirements.md)
 ## [Known Issues and Limitations](5.0/limitation_overview.md)
 ### [Desired State Configuration (DSC) Known Issues](5.0/limitation_dsc.md)
